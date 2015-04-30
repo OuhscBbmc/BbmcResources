@@ -67,7 +67,7 @@ g
 
 
 atriskNames <- c("AtRisk", "NotatRisk")
-dsbcapiCounts <- c(29, 71)
+dsbcapiCounts <- c(16, 84)
 
 dsbcapi <- as.data.frame(list(name=atriskNames, percentages=dsbcapiCounts))
 
@@ -75,8 +75,10 @@ g <- ggplot(data=dsbcapi, aes(x=name, y=percentages)) + coord_flip()
 g <- g + geom_bar(width=.5, stat="identity", fill="gray80")
 g <- g + theme_bw() + scale_x_discrete(drop=F)
 g <- g + labs(x = '', y = '', title = 'BCAPI At-Risk Percentages')
-g <- g + annotate("text", x = 1, y = 22.5, label = "At Risk 29%", size = 10, colour = "Red", hjust = 1)
-g <- g + annotate("text", x = 2, y = 28, label = "Not At Risk 71%", size = 10, colour = "Red", hjust = 1)
+g <- g + annotate("text", x = 1, y = 12, label = "16%", size = 10, colour = "Red", hjust = 1)
+g <- g + annotate("text", x = .70, y = 15, label = "At Risk", size = 8, colour = "Red", hjust = 1)
+g <- g + annotate("text", x = 2, y = 12, label = "84%", size = 10, colour = "Red", hjust = 1)
+g <- g + annotate("text", x = 1.7, y = 20, label = "Not At Risk", size = 8, colour = "Red", hjust = 1)
 g <- g + theme(panel.grid.minor.y = element_blank(), panel.grid.major.y = element_blank())
 g <- g + theme(axis.text.y=element_blank())
 g <- g + theme(axis.ticks.y=element_blank())
@@ -87,6 +89,9 @@ g
 
 rm(g)
 
+# http://www.cdc.gov/mmwr/preview/mmwrhtml/su6202a1.htm
+
+# http://www.iom.edu/~/media/Files/Report%20Files/2009/Preventing-Mental-Emotional-and-Behavioral-Disorders-Among-Young-People/Prevention%20Costs-Benefits.pdf
 
 
 
