@@ -2191,7 +2191,7 @@ i.icon-bg-light-grey {
 /*Funny Boxes
 ------------------------------------*/
 .funny-boxes {
-  background: #f7f7f7;
+
   padding: 20px 20px 15px;
   -webkit-transition:all 0.3s ease-in-out;
   -moz-transition:all 0.3s ease-in-out;
@@ -3323,6 +3323,7 @@ img.image-md {
 .content-lg {
   padding-top: 100px;
   padding-bottom: 100px;
+ 
 }
 
 .space-lg-hor {
@@ -3482,9 +3483,9 @@ img.image-md {
 
 /*Grey Backroud*/
 .bg-grey {
-  background: #f7f7f7;
-  border-top: solid 1px #eee;
-  border-bottom: solid 1px #eee;
+  background: #f9f9f9;
+  border-top: solid 2px #c8c8c8;
+  border-bottom: solid 2px #c8c8c8;
 }
 
 /*Rounded and Circle Classes

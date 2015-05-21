@@ -3,7 +3,7 @@
 .view {
    z-index:9;
    cursor: default;
-   overflow: hidden;
+   overflow: auto;
    text-align: center;
    position: relative;
    margin-bottom: 30px;
@@ -22,24 +22,23 @@
    position: relative;
 }
 .view h2 {
-   text-transform: uppercase;
+  
    color: #fff;
    text-align: center;
    position: relative;
-   font-size: 22px;
-   padding: 10px;
+   font-size: 16px;
+   padding: 0px;
    background: rgba(0, 0, 0, 0.8);
-   margin: 20px 0 0 0;
+   margin: 8px 0 0 0;
    text-shadow:none;
 }
 .view p {
-   font-family: Georgia, serif;
-   font-style: italic;
+   font-family: Arial, sansserif;
    font-size: 12px;
    position: relative;
    color: #fff;
-   padding: 10px 20px 10px;
-   text-align: center;
+   padding: 5px 10px 5px;
+   text-align: justify;
 }
 .view a.info {
    color: #fff;
