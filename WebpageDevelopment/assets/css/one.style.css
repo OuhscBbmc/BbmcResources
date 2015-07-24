@@ -169,11 +169,11 @@ a:hover {
 
 .one-page-header .navbar-nav > li > a:hover {
 	z-index: 1;
-	color: #630D0D;
+	color: #B41818;
 }
 
 .one-page-header .navbar-nav > li > a:focus {
-	color:  #630D0D;
+	color:  #B41818;
 }
 
 .one-page-header .navbar-nav > .active > a, 
@@ -181,7 +181,7 @@ a:hover {
 .one-page-header .navbar-nav > .active > a:focus {
 	z-index: 1;
 	background: none;
-	color:  #630D0D !important;
+	color:  #B41818 !important;
 }
 
 /*Responsive Navbar*/
@@ -299,7 +299,7 @@ a:hover {
 }
 
 .one-page-header .navbar-language > .open > a:focus {
-	color:  #630D0D;
+	color:  #B41818;
 }
 
 /*Dropdown Menu*/
@@ -321,7 +321,7 @@ a:hover {
 }
 
 .one-page-header.top-nav-collapse .navbar-language > li > a {
-	color: #777;
+	color: #555;
 }
 
 /*Fixed Header*/
@@ -339,20 +339,20 @@ a:hover {
 .one-page-header.top-nav-collapse .navbar-brand,
 .one-page-header.top-nav-collapse .navbar-nav > li > a,
 .one-page-header.top-nav-collapse .navbar-nav > li > a:before {
-	color: #777;
+	color: #555;
 }
 
 .one-page-header.top-nav-collapse .navbar-brand {
-	color: #777 !important;	
+	color: #555 !important;	
 }
 
 /*Navbar Toggle*/
 .one-page-header.top-nav-collapse .navbar-toggle .icon-bar {
-	background: #555;
+	background: #333;
 }
 
 .one-page-header.top-nav-collapse .navbar-toggle:hover .icon-bar {
-	background:  #630D0D;
+	background:  #B41818;
 }
 
 /*Intro Section
@@ -404,17 +404,17 @@ a:hover {
 }
 
 .cube-portfolio #filters-container .cbp-filter-item-active {
-	background:  #630D0D;
-	border-color:  #630D0D;
+	background:  #B41818;
+	border-color:  #B41818;
 }
 
 .cube-portfolio .cbp-l-filters-button .cbp-filter-counter {
 	color: #fff;
-	background:  #630D0D;
+	background:  #B41818;
 }
 
 .cube-portfolio .cbp-l-filters-button .cbp-filter-counter:before {
-	border-top-color: #630D0D;
+	border-top-color: #B41818;
 }/* 
 * Version: 1.6
 * Teal Color    : #18ba9b;
@@ -431,8 +431,8 @@ a:hover {
 }
 
 .pace .pace-activity {
-  border-top-color: #630D0D;
-  border-left-color: #630D0D;
+  border-top-color: #B41818;
+  border-left-color: #B41818;
 }
 
 /*Headers Default
@@ -440,82 +440,82 @@ a:hover {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #630D0D !important;
+    color: #B41818 !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #630D0D;
+    color: #B41818;
     z-index: 1;
 }
 
 .navbar-default .navbar-nav > li > a:focus {
-    color: #630D0D;
+    color: #B41818;
 }
 
 /*Logo
 ------------------------------------*/
 .navbar-default .navbar-brand span {
-    color: #630D0D !important;
+    color: #B41818 !important;
 }
 
 /*Title v1
 ------------------------------------*/
 .title-v1 h1:after, .title-v1 h2:after {
-    background:  #630D0D;
+    background:  #B41818;
 }
 
 /*Title v1
 ------------------------------------*/
 i.icon-bg-u {
-    background:  #630D0D;
+    background:  #B41818;
 }
 
 /*Text Color
 ------------------------------------*/
 .color-green {
-    color: #630D0D;
+    color: #B41818;
 }
 
 /*Team v1
 ------------------------------------*/
 .team-v1 li:hover > p:before {
-    background:  #630D0D;
+    background:  #B41818;
 }
 
 /*Service Box v1
 ------------------------------------*/
 .service-box-v1 p:after {
-    background:  #630D0D;
+    background:  #B41818;
 }
 
 .service-box-v1 li {
-    border-top: 1px dotted #630D0D;
+    border-top: 1px dotted #B41818;
 }
 
 .service-box-v1 li:hover {
-    color: #630D0D;
+    color: #B41818;
 }
 
 /*News v1
 ------------------------------------*/
 .news-v1 h3 a:hover {
-    color: #630D0D;
+    color: #B41818;
 }
 
 .news-v1 .news-v1-info li a:hover {
-    color: #630D0D;
+    color: #B41818;
 }
 
 /*News v1
 ------------------------------------*/
 .wrapper-portfolio #filters-container .cbp-filter-item-active {
-    background:  #630D0D;
-    border-color: #630D0D;
+    background:  #B41818;
+    border-color: #B41818;
 }
 
 .wrapper-portfolio #filters-container .cbp-filter-item:hover {
-    background:  #630D0D;
-    border-color: #630D0D;
+    background:  #B41818;
+    border-color: #B41818;
 }
 
 
@@ -561,7 +561,7 @@ a.read-more:hover {
   border-bottom-color: #e74c3c;
 }
 .header .navbar-toggle {
-  border-color: #630D0D;
+  border-color: #B41818;
 }
 .header .navbar-toggle,
 .header .navbar-toggle:hover,
@@ -569,7 +569,7 @@ a.read-more:hover {
   background:  #e74c3c;
 }
 .header .navbar-toggle:hover {
-  background:  #630D0D !important;
+  background:  #B41818 !important;
 }
 .header .navbar-nav > .open > a,
 .header .navbar-nav > .open > a:hover,
