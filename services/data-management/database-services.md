@@ -33,8 +33,15 @@ Collection Database
 ### Description
 {Sree, please fill in some details here.}
 
+
 ### Backups & Disaster Recovery Drills
-{Sree, please fill in some details here.}
+**Backups**
+The data in the collection database is critical and cannot be recovered if lost,hence our backup strategy is to have transaction log backed up all the time,Differential backup every hour and full backup every night.
+**Possible disaster recovery models:**
+-Always on high availablity
+-Asynch database Mirroring
+-Log shipping
+-SAN/VM Replication
 
 
 
@@ -45,4 +52,11 @@ Warehouse Database
 {Sree, please fill in some details here.}
 
 ### Backups & Disaster Recovery Drills
-{Sree, please fill in some details here.}
+**Backups**
+The data in the Warehouse Database is not as critical as the Collection Darabase and can be recovered back from external sources.The backup strategy is to have full backup every night.
+**Possible disaster recovery models:**
+-Always on high availablity
+-Asynch database Mirroring
+-Log shipping
+-SAN/VM Replication
+
