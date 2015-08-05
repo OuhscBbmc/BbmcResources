@@ -65,8 +65,86 @@ img {
 <h4 class="author"><em>Will Beasley &amp; Sree Mandem</em></h4>
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#summary-comparison">Summary Comparison</a></li>
+<li><a href="#features-common-to-all-databases">Features Common to All Databases</a></li>
+<li><a href="#collection-database">Collection Database</a><ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#backups-disaster-recovery-drills">Backups &amp; Disaster Recovery Drills</a></li>
+</ul></li>
+<li><a href="#warehouse-database">Warehouse Database</a><ul>
+<li><a href="#description-1">Description</a></li>
+<li><a href="#backups-disaster-recovery-drills-1">Backups &amp; Disaster Recovery Drills</a></li>
+</ul></li>
+</ul>
+</div>
 
 <p>Currently, we support two types of databases: <strong>collection</strong> and <strong>warehouse</strong>. A “collection” database contains live data that is difficult or impossible to recover. A “warehouse” database is entirely populated by outside sources, and thus relatively easy to recover.</p>
+<div id="summary-comparison" class="section level1">
+<h1>Summary Comparison</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Collection</th>
+<th align="left">Warehouse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Typical Purpose</td>
+<td align="left">Live research data</td>
+<td align="left">Organizing &amp; synthesizing data from external sources</td>
+</tr>
+<tr class="even">
+<td align="left">Monthly Cost</td>
+<td align="left">$A</td>
+<td align="left">$B</td>
+</tr>
+<tr class="odd">
+<td align="left">Data Backups</td>
+<td align="left">Full nightly + hourly diffs + continuous transaction logs</td>
+<td align="left">none (b/c we can recreate it from external sources again)</td>
+</tr>
+<tr class="even">
+<td align="left">Disaster Recovery Drills</td>
+<td align="left">{describe}</td>
+<td align="left">{describe}</td>
+</tr>
+<tr class="odd">
+<td align="left">Encryption</td>
+<td align="left">{describe}</td>
+<td align="left">{describe}</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="features-common-to-all-databases" class="section level1">
+<h1>Features Common to All Databases</h1>
+<ul>
+<li><p>TODO: describe schema backups (on Git)</p></li>
+<li><p>TODO: encryption</p></li>
+</ul>
+</div>
+<div id="collection-database" class="section level1">
+<h1>Collection Database</h1>
+<div id="description" class="section level3">
+<h3>Description</h3>
+</div>
+<div id="backups-disaster-recovery-drills" class="section level3">
+<h3>Backups &amp; Disaster Recovery Drills</h3>
+</div>
+</div>
+<div id="warehouse-database" class="section level1">
+<h1>Warehouse Database</h1>
+<div id="description-1" class="section level3">
+<h3>Description</h3>
+</div>
+<div id="backups-disaster-recovery-drills-1" class="section level3">
+<h3>Backups &amp; Disaster Recovery Drills</h3>
+</div>
+</div>
 
 
 </div>
