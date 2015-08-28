@@ -800,12 +800,12 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Overview of Git</h3>
 <div class="slideContent">
-<p><strong>Git</strong> is the underlying <strong>version control system</strong>.  It's a little similar to 'Track Changes' in MS Word, with three huge differences:</p>
+<p><strong>Git</strong> is the underlying <strong>version control system</strong>.  It's  similar to 'Track Changes' in MS Word, with three huge differences:</p>
 
 <ol>
 <li>Collaborators can make changes simultaneously. Track Changes frequently involves a painful cognitive load to  reconcile different versions.</li>
-<li>The entire history is accessible -not just the most recent version. At anytime, you can turn back the clock to any committed change (<a href="https://github.com/OuhscBbmc/StatisticalComputing/commit/813856f8eb360ce0225665e992c028806f9cdc3e">demo w/ SAS</a>).</li>
-<li>Coordinates an entire repository of files, not just isolated documents</li>
+<li>The entire history is accessible -not just the most recent version. At anytime, you can turn back the clock to any committed change (<a href="https://github.com/bwawrik/MBIO5810/commits/master">example</a>).</li>
+<li>Coordinates an entire repository of files, not just isolated documents.</li>
 </ol>
 
 </div>
@@ -814,19 +814,19 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Overview of GitHub</h3>
 <div class="slideContent">
-<p><strong>GitHub</strong> is an online service that leverages Git, and adds some sauce for statisticians</p>
+<p><strong>GitHub</strong> is an online service that leverages Git, and adds some sauce for scientists</p>
 
 <ul>
-<li>Hosts the repository online
+<li>Hosts the repository online.
 
 <ul>
-<li>Code</li>
-<li>Data</li>
-<li>Reports &amp; output</li>
+<li>Code.</li>
+<li>Data.</li>
+<li>Reports &amp; output.</li>
 </ul></li>
-<li>Adds options for user permissions, such as read-only (unlike Dropbox)</li>
-<li>Tools for visualizing code differences and developer activity</li>
-<li>Project Management Tracking, “Issues”, &amp; notifications</li>
+<li>Adds options for user permissions, such as read-only<br />(unlike Dropbox).</li>
+<li>Tools for visualizing code differences and developer activity.</li>
+<li>Project Management Tracking, “Issues”, &amp; notifications.</li>
 </ul>
 
 </div>
@@ -836,10 +836,10 @@ hljs.initHighlightingOnLoad();
 <h3>Outline</h3>
 <div class="slideContent">
 <ol>
-<li>Benefits &amp; Complete examples</li>
-<li>Creation and organization</li>
-<li>Communicate with statisticians and non-statisticians</li>
-<li>Precautions with health care and PHI data</li>
+<li>Benefits &amp; Complete examples.</li>
+<li>Creation and organization.</li>
+<li>Communicate with statisticians and non-statisticians.</li>
+<li>Precautions with health care and PHI data.</li>
 </ol>
 
 </div>
@@ -849,9 +849,9 @@ hljs.initHighlightingOnLoad();
 <h3>Benefits</h3>
 <div class="slideContent">
 <ul>
-<li>Reproducibility for internal team</li>
-<li>Reproducibility for outsiders</li>
-<li>Hosting reports</li>
+<li>Reproducibility for internal team.</li>
+<li>Reproducibility for outsiders.</li>
+<li>Hosting reports.</li>
 </ul>
 
 </div>
@@ -897,14 +897,14 @@ hljs.initHighlightingOnLoad();
 <h3>Reproducibility for Internal Team</h3>
 <div class="slideContent">
 <ul>
-<li>Easier to be disciplined about.
+<li>Easier to be disciplined about:
 
 <ul>
 <li>maintaining a current &amp; coherent code base.</li>
 <li><em>programmatic</em> data manipulation (instead of <em>manual</em>).</li>
 <li>encapsulating analyses in different files.</li>
 </ul></li>
-<li>Team members can more easily review and synchronize with your changes.</li>
+<li>Team members can more easily review and synchronize changes.</li>
 <li>Easier to jump between computers.</li>
 <li><a href="https://github.com/OuhscBbmc/DeSheaToothakerIntroStats">github.com/OuhscBbmc/DeSheaToothakerIntroStats</a> quickly becomes a small website.</li>
 </ul>
@@ -919,7 +919,7 @@ hljs.initHighlightingOnLoad();
 <li>The inputs (ie, data and code) can be inspected &amp; downloaded immediately.
 
 <ul>
-<li>Details too trivial for the article are available too.</li>
+<li>Details too trivial for your article are available too.</li>
 </ul></li>
 <li>The outputs (ie, stats, graphs, and reports) can be compared to their results.</li>
 <li>Ideally the exactly software versions are easily determined.</li>
@@ -932,8 +932,8 @@ hljs.initHighlightingOnLoad();
 <h3>Benefits of Hosting Reports</h3>
 <div class="slideContent">
 <ul>
-<li>Single URL to send to anyone interested (not just those with access to the OUHSC file server).</li>
-<li>Single report to send anyone (not a bunch of loose graphic files).</li>
+<li>Single URL to send to anyone interested<br />(not just those with access to the OU file server).</li>
+<li>Single report to send anyone<br />(not a bunch of loose graphic files).</li>
 </ul>
 
 </div>
@@ -942,6 +942,8 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Four Life Cycle Templates</h3>
 <div class="slideContent">
+<p>Before you start, decide if the repo will be:</p>
+
 <ul>
 <li><strong>Public</strong> from the start.</li>
 <li><strong>Private</strong> forever.</li>
@@ -971,15 +973,15 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Demo</h3>
+<h3>Demo 1: Create and Assign a Teammate</h3>
 <div class="slideContent">
 <ol>
-<li>Create a new repository in wibeasley <code>ScugDemo-2014-05-06</code>.</li>
-<li>Assign a new user <code>mhunter1</code>.</li>
+<li>Create a new repository in wibeasley:<br /><code>Mbio5810Demo-2015-08</code>.</li>
+<li>Assign privileges to a existing user: <code>bwawrik</code>.</li>
 <li>Clone on my local machine.</li>
 <li>Copy <code>RAnalysisSkeleton</code>.</li>
 <li>Push changes.</li>
-<li>Mike makes changes in the browser version &amp; commits.</li>
+<li>Boris makes changes in the browser version &amp; commits.</li>
 <li>I sync/pull his changes.</li>
 <li>Create an issue w/ links.</li>
 </ol>
@@ -988,19 +990,65 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Containing Data</h3>
+<h3>Demo 2a: More Descriptions</h3>
+<div class="slideContent">
+<ol>
+<li>Sree navigates to <code>Mbio5810Demo-2015-08</code> webpage.</li>
+<li>“Fork” the repo (but still on <strong>central server</strong>).</li>
+<li>“Clone” the repo to his <strong>local</strong> machine.</li>
+<li>Modify some file.</li>
+<li>Save the file to <strong>disk</strong>.</li>
+<li>“Commit” the change to <strong>local repository</strong>.</li>
+<li>“Sync” the change(s) to <strong>central server</strong>.</li>
+</ol>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Demo 2b: Pull Request from Outsider</h3>
+<div class="slideContent">
+<ol>
+<li>Sree: Navigate to repo website.</li>
+<li>Sree: Submit a “pull request” (ie, a “PR”).</li>
+<li>Will: Receives email notification.</li>
+<li>Will: Accepts pull request.</li>
+<li>Boris: Syncs his local machine.</li>
+</ol>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Large Data Files</h3>
+<div class="slideContent">
+<ul>
+<li>Git is <em>not</em> intended to work with big data files (say, over 1MB).
+
+<ul>
+<li>Especially ones that change frequently.</li>
+<li>The Git history gets bloated and syncing is sluggish.</li>
+<li>Excluding data from repo hurts reproducibility.</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Containing/Referencing Data</h3>
 <div class="slideContent">
 <p>The BBMC employs a variety of strategies.  As we descend, security increases while reproducibility decreases.</p>
 
 <ol>
 <li>Public data is contained directly as CSVs.</li>
-<li>Assume users can download the same public database (eg, large Census files)</li>
-<li>Unshared data that Git “ignores” and doesn't push to the server</li>
-<li>Pulling from the OUHSC file server</li>
-<li>Pulling from a database</li>
+<li>Assume users can download the same public database<br />(eg, reference genome, census file).</li>
+<li>Unshared data that Git “ignores” and doesn't push to the server.</li>
+<li>Pulling from the OUHSC file server.</li>
+<li>Pulling from a database.</li>
 </ol>
 
-<p>Even “private” GitHub repositories should never contain patient data (or anything legally protected).</p>
+<p>GitHub repositories should never contain patient data (or anything legally protected) –not even “private” repos.</p>
 
 </div>
 
@@ -1027,7 +1075,7 @@ hljs.initHighlightingOnLoad();
 <ol>
 <li>Long-term documentation stored in the repository.  It should outlive GitHub.</li>
 <li>Email has private/internal thoughts &amp; criticisms.</li>
-<li>GitHub issues host publically acceptable thoughts &amp; criticisms.  Treat as public.  Don't assume GitHub will be in business in three years; forntunately the code &amp; reports aren't tied to GitHub.  <a href="https://groups.google.com/forum/#!topic/ggplot2/dY1cKfCsb1o">Worst case</a>, you can serve them as a zip file on your faculty page.</li>
+<li>GitHub issues host publically acceptable thoughts &amp; criticisms.  Treat as public.  Don't assume GitHub will be in business in three years; forntunately the code &amp; reports aren't tied to GitHub.  <a href="https://groups.google.com/forum/#!topic/ggplot2/dY1cKfCsb1o">Worst case</a>, you can serve them as a zip file on your personal page.</li>
 </ol></li>
 <li>Example issues: <a href="https://github.com/OuhscBbmc/REDCapR/issues?direction=desc&amp;sort=updated&amp;state=open">REDCapR</a> and <a href="https://github.com/bwawrik/MBIO5810/issues">MBIO5810</a>.</li>
 </ul>
@@ -1079,15 +1127,14 @@ hljs.initHighlightingOnLoad();
 <ul>
 <li>In the repository's README.md file, provide any relevant information for humans <strong>and search engines</strong>.</li>
 <li>It's obvious how it reduces barriers for human readers.</li>
-<li>SEO is also important. Not only will it help improve the repository's SEO, it also improves the performance of your articles.</li>
+<li>SEO is also important. Not only will it help improve the repository's SEO, it also improves the performance of your articles.  Examples:
+
+<ul>
+<li><a href="https://github.com/LiveOak/LylesCarbonSteelCorrosion">SteelCorrosion</a></li>
+<li><a href="https://github.com/LiveOak/UcaBullying">UcaBullying</a></li>
+<li><a href="https://github.com/OuhscBbmc/REDCapR">REDCapR</a></li>
+</ul></li>
 </ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Large Data Files</h3>
-<div class="slideContent">
 
 </div>
 
@@ -1095,6 +1142,21 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Branches, Forks, &amp; Pull Requests</h3>
 <div class="slideContent">
+<ul>
+<li>While a beginner, I recommended you
+
+<ul>
+<li>Give everyone permissions within reason<br />(it's much simpler and hassle-free).</li>
+<li>If a PR is necessary, try w/ the browser<br />(not your local macine).</li>
+</ul></li>
+<li>As you gain experience
+
+<ul>
+<li>Experiment w/ branches/forks locally.</li>
+<li>Make small contributions to <a href="https://github.com/bwawrik/MBIO5810">MBIO5810</a> scripts &amp; documentation.</li>
+<li>Carefully study the <a href="https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request"><code>rebase</code></a>.</li>
+</ul></li>
+</ul>
 
 </div>
 
@@ -1105,13 +1167,22 @@ hljs.initHighlightingOnLoad();
 <ul>
 <li>Sync early &amp; often</li>
 <li>When working in a team, avoid modifying the same file simultaneously.  Reconciliation costs you time (but is still easier than without GitHub).</li>
-<li>Works easiest with plain text (eg, SAS, R, CSV), rather than binary/proprietary formats (eg, docx &amp; sas7bdat).  The storage mechanism doesn't care, but the “diff” views won't be available, and reconciling differences can't be done automatically.</li>
-<li>Reconciliation strategies have a range of sophistication.
+<li>Works easiest with plain text (eg, shell, SAS, R, <a href="https://github.com/LiveOak/LylesCarbonSteelCorrosion/blob/a8e64da57535001a18b4fcc4ead4a61817511f53/Data/Raw/CouponPitDepth.csv">csv</a>, <a href="https://github.com/bwawrik/MBIO5810/blob/27756e071705cb6bbd7cacce514e9df8a8a9bd3e/misc_files/rocktype.map">map</a>), rather than binary/proprietary formats (eg, docx &amp; sas7bdat).  The storage mechanism doesn't care much, but the “diff” views won't be available, and reconciling differences can't be done automatically.</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Cautions &amp; Limitations -Part 2</h3>
+<div class="slideContent">
+<ul>
+<li>Reconciliation strategies range in sophistication, including
 
 <ul>
 <li>Command line functions for experts.</li>
 <li>Formal branching &amp; merging using GitHub's visual tools.</li>
-<li>Our “Hard Reset” (which is only available option if you're not using version control).</li>
+<li>Our “Hard Reset” (ie, the only possibility without version control).</li>
 </ul></li>
 <li>Git branching &amp; forking is an important in software development, but I discourage it for repositories focused on analytics.</li>
 </ul>
@@ -1120,7 +1191,7 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Cautions &amp; Limitations -Part 2</h3>
+<h3>Cautions &amp; Limitations -Part 3</h3>
 <div class="slideContent">
 <p>Securing private information (data &amp; comments).</p>
 
@@ -1141,6 +1212,8 @@ hljs.initHighlightingOnLoad();
 <ul>
 <li><a href="http://git-scm.com/">http://git-scm.com/</a></li>
 <li><a href="https://help.github.com/">https://help.github.com/</a></li>
+<li><a href="http://shop.oreilly.com/product/0636920022862.do">Version Control with Git</a>, Loeliger &amp; McCullough (2012)</li>
+<li>? <a href="http://shop.oreilly.com/product/0636920033059.do">Introducing GitHub: a Non-Technical Guide</a>, Bell &amp; Beer (2014)</li>
 </ul>
 
 <h3><a href="http://www.crcpress.com/product/isbn/9781466561595">Implementing Reproducible Research</a></h3>
