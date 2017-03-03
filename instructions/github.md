@@ -2,6 +2,10 @@
 
 ### GitHub Account Creation
 
+[email subject]: please create a GitHub account to better collaborate with us
+
+[email body]:
+
 Hi zzz, we use GitHub (https://github.com) to manage a lot of the BBMC assignments, code, and aggregated/de-identified reports.  To be clear, no data or PHI gets on GitHub (or ever leaves IT-approved storage devices, like file servers or databases).
 
 I created a private repo for the upcoming reporting projects that we hope to work with you on.  Could you please:
