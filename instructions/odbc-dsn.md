@@ -1,6 +1,6 @@
 # ODBC Tasks
 
-### Create Local DSN
+### Create Local DSN (for database users)
 
 Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library/cc879308(v=sql.105).aspx)
 
@@ -43,3 +43,15 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 1. Click 'Test Data Source' in the next screen.  The test should be successful.  *If so*, you can close everything related to the ODBC administration.  *If not*, look at the troubleshooting steps below.
 
     ![test-data-source](images/test-data-source.png)
+
+### Troubleshooting (for database users and administrators)
+
+1. If you can't download & install the driver, verify that you
+    * Have administrative privileges on the machine.
+    * Selected the correct 32/64 version.
+    * Selected a driver version that's compatible with your operating system.
+
+1. If the 'Test Data Source' fails, verify that
+    * Your computer is connected to the campus network.  If you're off-campus, VPN access may not be adequate.
+    * The **DSN Name**, **Server Name**, and **Database Name** are correct.
+    * A BBMC database administrator has correctly (a) created a *server* login and (b) created a *database* user account, and (c) granted  adequate privileges to the database user account.
