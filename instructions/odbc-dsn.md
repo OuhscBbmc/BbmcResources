@@ -55,3 +55,44 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
     * Your computer is connected to the campus network.  If you're off-campus, VPN access may not be adequate.
     * The **DSN Name**, **Server Name**, and **Database Name** are correct.
     * A BBMC database administrator has correctly (a) created a *server* login and (b) created a *database* user account, and (c) granted  adequate privileges to the database user account.
+
+
+### Add user privileges (for database admins)
+
+The BBMC DBA should run the following sql after changing the user and database names on lines 3 & 4.
+
+*The dynamic `USE` statement isn't working yet.  We need to find a way to use it programmatically.*
+
+```sql
+USE [master]
+GO
+DECLARE @qualified_user_name nvarchar(255); SET @qualified_user_name = '[OUHSC\wpreston]'
+DECLARE @database_name nvarchar(255); SET @database_name = '[go_round_in_circles]'
+
+DECLARE @create_login nvarchar(255); SET @create_login = 'CREATE LOGIN ' + @qualified_user_name + ' FROM WINDOWS ' -- WITH DEFAULT_DATABASE=[master]'
+DECLARE @use nvarchar(max); SET @use = 'USE ' + @database_name
+DECLARE @create_user nvarchar(255); SET @create_user = 'CREATE USER ' + @qualified_user_name + ' FOR LOGIN ' + @qualified_user_name
+
+print 'login & user name: ' + @qualified_user_name;
+print 'database to modify: ' + @database_name; print ''
+print '------------------------------------'
+
+USE [master]
+
+--print 'login creation: ' + @create_login
+-- EXECUTE sp_executesql @create_login
+
+print 'database use  : ' + @use
+
+--USE [go_round_in_circles]
+EXECUTE sp_executesql @use
+
+print 'user creation : ' + @create_user
+EXECUTE sp_executesql @create_user
+
+print 'add datareader'
+EXEC sp_addrolemember N'db_datareader ', @qualified_user_name
+
+print 'add datawriter'
+EXEC sp_addrolemember N'db_datawriter ', @qualified_user_name
+```
