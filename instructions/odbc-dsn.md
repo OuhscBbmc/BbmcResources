@@ -96,3 +96,5 @@ EXEC sp_addrolemember N'db_datareader ', @qualified_user_name
 print 'add datawriter'
 EXEC sp_addrolemember N'db_datawriter ', @qualified_user_name
 ```
+
+*last revised 2017-03-30 by Will Beasley*
