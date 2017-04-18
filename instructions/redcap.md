@@ -7,7 +7,7 @@
 
 * **email cc**: Zabrina Antry; David Bard; Sreeharsha Mandem
 
-* **email subject**: CDW {project-name}: please initialize your BBMC REDCap account to access project-specific data
+* **email subject**: CDW {project-name}: please initialize your BBMC REDCap account to access project-specific data (email 2 of 3)
 
 * **email body**:
 
