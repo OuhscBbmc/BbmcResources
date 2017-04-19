@@ -64,6 +64,46 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 
 ```
 
+### Initialize README in root directory
+
+Paste this block into a new issue called *Initialize README*.
+```
+In the project's intro page, include the following
+
+- [ ] project name
+- [ ] project title
+- [ ] project abstract
+- [ ] personnel approved by the IRB to view the project's PHI
+- [ ] location of IRB documents
+- [ ] location of file server
+- [ ] location of REDCap cache
+
+====
+A starting template is
+
+# {project-name} (eg, marin-dka-1)
+{project-title} (eg, Efficacy of initial fluid resuscitation in pediatric diabetic ketoacidosis (DKA))
+
+## Approved Personnel to view PHI:
+(paste names from the approved IRB documents.)
+
+## Locations
+
+| Resource | Location| Notes |
+| -------- | ------- | ----- |
+| REDCap | https://bbmc.ouhsc.edu/redcap/redcap_v6.16.8/index.php?pid={redcap-cache-pid} |  |
+| File server | S:/.../BBMC/{project-name}/ | For security reasons, avoid putting the full path of the directory in the repo. |
+| IRB | [`/documentation/irb/`](documentation/irb/) | |
+
+## Abstract
+> (paste from IRB Research Protocol) 
+
+## Specific Aims
+> (paste from IRB Research Protocol) 
+
+```
+
+
 ### IRB-Approved personnel
 
 Paste this block into a new issue called *Check IRB-approved personnel*.
