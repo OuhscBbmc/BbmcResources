@@ -107,7 +107,7 @@ A starting template is
 ### IRB-Approved personnel
 
 Paste this block into a new issue called *Check IRB-approved personnel*.
-``
+```
 @zantry, please check that everyone (with access to the S drive and to the REDCap cache) have been approved by the IRB to view PHI related to this project.  This includes
 - [ ] CDW/BBMC staff
 - [ ] Investigators, project managers, research assistants, etc
