@@ -63,3 +63,16 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 - [ ] Rproj file (and rename to '{project-name}.Rproj'; eg, 'marin-dka-1.Rproj')
 
 ```
+
+### IRB-Approved personnel
+
+Paste this block into a new issue called *Check IRB-approved personnel*.
+``
+@zantry, please check that everyone (with access to the S drive and to the REDCap cache) have been approved by the IRB to view PHI related to this project.  This includes
+- [ ] CDW/BBMC staff
+- [ ] Investigators, project managers, research assistants, etc
+
+Then please
+- [ ] add the approved names to the [`README.md`](README.md) file.
+
+```
