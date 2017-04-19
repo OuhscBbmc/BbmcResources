@@ -1,6 +1,6 @@
 # GitHub Tasks
 
-### GitHub Account Creation
+### GitHub User Account Creation
 
 * **email to**: {collaborators}
 
@@ -23,6 +23,21 @@
 
     At first, you're likely to be a consumer of the contents and reports on the repository.  If you'd like to add material to the repo, please talk to us first.  We have some guidelines and practices for avoiding PHI inadvertently getting onto the repository.
 
+### Repo Settings
+
+Paste this block into a new issue called *GitHub Repo Settings*:
+```
+- [ ] double-check the repo is private
+- [ ] initial GitHub team
+    - [ ] [create team](https://help.github.com/articles/creating-a-team/) called `{project-name}-push-pull` (*e.g.*, `marin-dka-1-push-ull`)
+    - [ ] add appropriate CDW staff.
+    - [ ] add researchers/collaborators, once their GitHub account is created.  If they're not currently a member of the [OuhscBbmc team](https://github.com/OuhscBbmc), they'll need to accept the emailed invitation.
+    - [ ] add the appropriate repository.
+- [ ] Add [topics](https://help.github.com/articles/about-topics/).  
+    * All CDW projects should be labeled w/ [`bbmc-collaborator`](https://github.com/search?q=topic%3Abbmc-collaborator+org%3AOuhscBbmc&type=Repositories) and [`emr`](https://github.com/search?q=topic%3Aemr+org%3AOuhscBbmc&type=Repositories).
+    * Add a topic or tw for the content/field of the research (eg, ['obesity'](https://github.com/search?q=topic%3Aobesity+org%3AOuhscBbmc&type=Repositories),  ['asthma'](https://github.com/search?q=topic%3Aasthma+org%3AOuhscBbmc&type=Repositories)). 
+```
+
 ### Populate Repo
 
 Paste this block into a new issue called *Add skeleton*:
@@ -35,6 +50,6 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 - [ ] `manipulation/` (including ellis example)
 - [ ] `utility/` (including package dependencies & `reproduce.R`)
 - [ ] `.gitattributes` text file
-- [ ] `.gitignore` text file (for CDW projects, copy & rename `./utility/eager.gitignore` to `./.gitignore`
+- [ ] `.gitignore` text file (for CDW projects, copy & rename `./utility/eager.gitignore` to `./.gitignore` within RStudio)
 - [ ] Rproj file (and rename to '{project-name}.Rproj'; eg, 'marin-dka-1.Rproj')
 ```
