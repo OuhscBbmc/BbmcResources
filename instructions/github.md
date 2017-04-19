@@ -48,11 +48,14 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 - [ ] `analysis/` (including report example)
 - [ ] `data-public/` (including metadata)
 - [ ] `data-unshared/`
-- [ ] `documentation/`
+- [ ] `documentation/` (try to include the IRB documents, which aren't in the skeleton)
 - [ ] `manipulation/` (including ellis example)
 - [ ] `utility/` (including package dependencies & `reproduce.R`)
 - [ ] `.gitattributes` text file
-- [ ] `.gitignore` text file (for CDW projects, copy & rename `./utility/eager.gitignore` to `./.gitignore` within RStudio)
+- [ ] `.gitignore` text file 
+    * for CDW projects, copy & rename `./utility/eager.gitignore` to `./.gitignore`,  either
+        * within RStudio
+        * command prompt with `move eager.gitignore .gitignore`
 - [ ] Rproj file (and rename to '{project-name}.Rproj'; eg, 'marin-dka-1.Rproj')
 
 ```
