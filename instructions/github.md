@@ -85,7 +85,9 @@ A starting template is
 {project-title} (eg, Efficacy of initial fluid resuscitation in pediatric diabetic ketoacidosis (DKA))
 
 ## Approved Personnel to view PHI:
-(paste names from the approved IRB documents.)
+* CDW/BBMC Staff: (paste names from the approved IRB documents.)
+* Centricity / OU-Physicians staff: (paste names from the approved IRB documents.)
+* Investigators & team: (paste names from the approved IRB documents.)
 
 ## Locations
 
@@ -113,6 +115,6 @@ Paste this block into a new issue called *Check IRB-approved personnel*.
 - [ ] Investigators, project managers, research assistants, etc
 
 Then please
-- [ ] add the approved names to the [`README.md`](README.md) file.
+- [ ] add the approved names to the `README.md` file in the repo's root directory.
 
 ```
