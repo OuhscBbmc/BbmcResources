@@ -35,6 +35,6 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 - [ ] `manipulation/` (including ellis example)
 - [ ] `utility/` (including package dependencies & `reproduce.R`)
 - [ ] `.gitattributes` text file
-- [ ] `.gitignore` text file
+- [ ] `.gitignore` text file (for CDW projects, copy & rename `./utility/eager.gitignore` to `./.gitignore`
 - [ ] Rproj file (and rename to '{project-name}.Rproj'; eg, 'marin-dka-1.Rproj')
 ```
