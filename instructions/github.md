@@ -22,3 +22,19 @@
     6. Once you're added, you'll be able to access the repo at https://github.com/OuhscBbmc/{project-name}.  Until you're added, you (like the rest of the public) will be blocked, and see only a 404 error page.
 
     At first, you're likely to be a consumer of the contents and reports on the repository.  If you'd like to add material to the repo, please talk to us first.  We have some guidelines and practices for avoiding PHI inadvertently getting onto the repository.
+
+### Populate Repo
+
+Paste this block into a new issue called *Add skeleton*:
+```
+Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalysisSkeleton):
+- [ ] `analysis/` (including report example)
+- [ ] `data-public/` (including metadata)
+- [ ] `data-unshared/`
+- [ ] `documentation/`
+- [ ] `manipulation/` (including ellis example)
+- [ ] `utility/` (including package dependencies & `reproduce.R`)
+- [ ] `.gitattributes` text file
+- [ ] `.gitignore` text file
+- [ ] Rproj file (and rename to '{project-name}.Rproj'; eg, 'marin-dka-1.Rproj')
+```
