@@ -27,8 +27,9 @@
 
 Paste this block into a new issue called *GitHub Repo Settings*:
 ```
-- [ ] double-check the repo is private
-- [ ] initial GitHub team
+- [ ] double-check the repo is private.  (It should have a lock icon and say 'Private' new the repo name.)
+- [ ] Add repo description like `{pi-name} (PI): "{project-title}"` (eg, 'Ryan Blucker (PI): "Prevalence rates of overweight Foster care children and adolescents in in a Primary Care clinic setting"')
+- [ ] initialize GitHub team
     - [ ] [create team](https://help.github.com/articles/creating-a-team/) called `{project-name}-push-pull` (*e.g.*, `marin-dka-1-push-ull`)
     - [ ] add appropriate CDW staff.
     - [ ] add researchers/collaborators, once their GitHub account is created.  If they're not currently a member of the [OuhscBbmc team](https://github.com/OuhscBbmc), they'll need to accept the emailed invitation.
@@ -36,6 +37,7 @@ Paste this block into a new issue called *GitHub Repo Settings*:
 - [ ] Add [topics](https://help.github.com/articles/about-topics/).  
     * All CDW projects should be labeled w/ [`bbmc-collaborator`](https://github.com/search?q=topic%3Abbmc-collaborator+org%3AOuhscBbmc&type=Repositories) and [`emr`](https://github.com/search?q=topic%3Aemr+org%3AOuhscBbmc&type=Repositories).
     * Add a topic or tw for the content/field of the research (eg, ['obesity'](https://github.com/search?q=topic%3Aobesity+org%3AOuhscBbmc&type=Repositories),  ['asthma'](https://github.com/search?q=topic%3Aasthma+org%3AOuhscBbmc&type=Repositories)). 
+    
 ```
 
 ### Populate Repo
@@ -52,4 +54,5 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 - [ ] `.gitattributes` text file
 - [ ] `.gitignore` text file (for CDW projects, copy & rename `./utility/eager.gitignore` to `./.gitignore` within RStudio)
 - [ ] Rproj file (and rename to '{project-name}.Rproj'; eg, 'marin-dka-1.Rproj')
+
 ```
