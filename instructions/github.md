@@ -93,9 +93,11 @@ A starting template is
 
 | Resource | Location| Notes |
 | -------- | ------- | ----- |
-| REDCap | https://bbmc.ouhsc.edu/redcap/redcap_v6.16.8/index.php?pid={redcap-cache-pid} |  |
+| REDCap | https://bbmc.ouhsc.edu/redcap/redcap_v6.16.8/index.php?pid={redcap-cache-pid} | Cache that is ready to be analyzed. |
 | File server | S:/.../BBMC/{project-name}/ | For security reasons, avoid putting the full path of the directory in the repo. |
-| IRB | [`/documentation/irb/`](documentation/irb/) | |
+| IRB | [`/documentation/irb/`](documentation/irb/) | Location of documents submitted & approved by the IRB |
+| IRB Expiration date | 2017-011-11 | Date when IRB reapproved is required. |
+| Project Tracker | https://bbmc.ouhsc.edu/redcap/redcap_v7.3.2/DataEntry/record_home.php?pid=80&id=49&arm=1 | Used internally by BBMC. |
 
 ## Abstract
 > (paste from IRB Research Protocol) 
