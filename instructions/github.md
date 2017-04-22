@@ -120,3 +120,31 @@ Then please
 - [ ] add the approved names to the `README.md` file in the repo's root directory.
 
 ```
+
+### Organization-wide defaults and practices
+Our core-wide goal of being [secure by default](https://en.wikipedia.org/wiki/Secure_by_default) applies to GitHub too.  Some security measures have to be added explicitly (*e.g.*, `.gitignore` blocking common data files like `*.csv` & `*.xlsx`), but these organization-wide settings make new repo more secure as soon as their initialized, even at the cost of accessibility.
+
+*Defaults*
+
+1. Two-factor authentication [is required](https://help.github.com/articles/requiring-two-factor-authentication-in-your-organization/) for all organization memebers and outside collaborators.  See setting "Security" => "Two-factor authentication"
+
+1. Organization members are [restricted from creating repositories](https://help.github.com/articles/repository-permission-levels-for-an-organization/#restricting-people-from-creating-repositories).  See setting "Member privileges" => "Repository creation".
+
+1. Organization members have [zero permissions on new repositories](https://help.github.com/articles/repository-permission-levels-for-an-organization/#restricting-people-from-creating-repositories).  See setting "Member privileges" => "Default repository permission"
+.
+
+*Practices*
+
+1. Authorized teammates outside OUHSC are designated as [outside collaborators](https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/), instead of "members".
+
+1. Only three people are [owners](https://help.github.com/articles/permission-levels-for-an-organization/) of the GitHub organization.  Everyone else must be explicitly added to each appropriate repository.  Other important restrictions to members include (a) cannot add/delete/transfer (private or public) repositories and (b) cannot add/delete other members to organization.
+
+1. Every week, an owner (probably @wibeasley) will review the [organization's audit log](https://github.com/organizations/OuhscBbmc/settings/audit-log) (which only owners can view).
+
+1. Two or more owners must discuss and agree upon adding/modifying/deleting any extra entity added to our GitHub Organization, including 
+    1. [webhooks](https://developer.github.com/webhooks/),
+    1. [third-party applications](https://help.github.com/articles/about-third-party-application-restrictions/), 
+    1. [installed integration](https://developer.github.com/early-access/integrations/), and
+    1. [OAuth applications](https://developer.github.com/v3/oauth/).
+    
+    Currently, the only approved entity is the [Codecov](https://codecov.io/) integration, which helps us test our package code and quantify its coverage ("Improve code quality. Expose bugs and security vulnerabilities.").  Codecov must be explicitly turned on for each desired repository.
