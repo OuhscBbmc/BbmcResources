@@ -24,7 +24,7 @@
     At first, you're likely to be a consumer of the contents and reports on the repository.  If you'd like to add material to the repo, please talk to us first.  We have some guidelines and practices for avoiding PHI inadvertently getting onto the repository.
 
 * **after they respond** with their GitHub username and you've added it to the [GitHub team](https://help.github.com/articles/maintaining-teams/), send an email along the lines of:
-    
+
     Thanks for sending us your GitHub username.  I've added your name to the repository.  To view it, you'll first need to accept the automated email from GitHub (that confirms you want to join the OuhscBbmc organization).  Then you'll have access to https://github.com/OuhscBbmc/{project-name}.  Tell me if you still see a 404 error.
 
 ### Repo Settings
@@ -40,8 +40,8 @@ Paste this block into a new issue called *GitHub Repo Settings*:
     - [ ] [add](https://help.github.com/articles/managing-team-access-to-an-organization-repository/) the appropriate repository.
 - [ ] Add [topics](https://help.github.com/articles/about-topics/).  
     * All CDW projects should be labeled w/ [`bbmc-collaborator`](https://github.com/search?q=topic%3Abbmc-collaborator+org%3AOuhscBbmc&type=Repositories) and [`emr`](https://github.com/search?q=topic%3Aemr+org%3AOuhscBbmc&type=Repositories).
-    * Add a topic or tw for the content/field of the research (eg, ['obesity'](https://github.com/search?q=topic%3Aobesity+org%3AOuhscBbmc&type=Repositories),  ['asthma'](https://github.com/search?q=topic%3Aasthma+org%3AOuhscBbmc&type=Repositories)). 
-    
+    * Add a topic or tw for the content/field of the research (eg, ['obesity'](https://github.com/search?q=topic%3Aobesity+org%3AOuhscBbmc&type=Repositories),  ['asthma'](https://github.com/search?q=topic%3Aasthma+org%3AOuhscBbmc&type=Repositories)).
+
 ```
 
 ### Populate Repo
@@ -56,7 +56,7 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 - [ ] `manipulation/` (including ellis example)
 - [ ] `utility/` (including package dependencies & `reproduce.R`)
 - [ ] `.gitattributes` text file
-- [ ] `.gitignore` text file 
+- [ ] `.gitignore` text file
     * for CDW projects, copy & rename `./utility/eager.gitignore` to `./.gitignore`,  either
         * within RStudio
         * command prompt with `move eager.gitignore .gitignore`
@@ -91,19 +91,20 @@ A starting template is
 
 ## Locations
 
-| Resource | Location| Notes |
-| -------- | ------- | ----- |
-| REDCap | https://bbmc.ouhsc.edu/redcap/redcap_v6.16.8/index.php?pid={redcap-cache-pid} | Cache that is ready to be analyzed. |
-| File server | S:/.../BBMC/{project-name}/ | For security reasons, avoid putting the full path of the directory in the repo. |
-| IRB | [`/documentation/irb/`](documentation/irb/) | Location of documents submitted & approved by the IRB |
-| IRB Expiration date | 2017-011-11 | Date when IRB reapproved is required. |
-| Project Tracker | https://bbmc.ouhsc.edu/redcap/redcap_v7.3.2/DataEntry/record_home.php?pid=80&id=49&arm=1 | Used internally by BBMC. |
+| Resource            | Location                                                                                 | Notes                                                                           |
+|:--------------------|:-----------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| REDCap              | https://bbmc.ouhsc.edu/redcap/redcap_v6.16.8/index.php?pid={redcap-cache-pid}            | Cache that is ready to be analyzed.                                             |
+| File server         | S:/.../BBMC/{project-name}/                                                              | For security reasons, avoid putting the full path of the directory in the repo. |
+| IRB                 | [`/documentation/irb/`](documentation/irb/)                                              | Location of documents submitted & approved by the IRB                           |
+| IRB Expiration date | 2017-011-11                                                                              | Date when IRB reapproved is required.                                           |
+| Project Tracker     | https://bbmc.ouhsc.edu/redcap/redcap_v7.3.2/DataEntry/record_home.php?pid=80&id=49&arm=1 | Used internally by BBMC.                                                        |
+| Stats for IRB       |                                                                                          | Code or reports informing continuing reviews submitted to the IRB.              |
 
 ## Abstract
-> (paste from IRB Research Protocol) 
+> (paste from IRB Research Protocol)
 
 ## Specific Aims
-> (paste from IRB Research Protocol) 
+> (paste from IRB Research Protocol)
 
 ```
 
@@ -141,10 +142,10 @@ Our core-wide goal of being [secure by default](https://en.wikipedia.org/wiki/Se
 
 1. Every week, an owner (probably @wibeasley) will review the [organization's audit log](https://github.com/organizations/OuhscBbmc/settings/audit-log) (which only owners can view).
 
-1. Two or more owners must discuss and agree upon adding/modifying/deleting any extra entity added to our GitHub Organization, including 
+1. Two or more owners must discuss and agree upon adding/modifying/deleting any extra entity added to our GitHub Organization, including
     1. [webhooks](https://developer.github.com/webhooks/),
-    1. [third-party applications](https://help.github.com/articles/about-third-party-application-restrictions/), 
+    1. [third-party applications](https://help.github.com/articles/about-third-party-application-restrictions/),
     1. [installed integration](https://developer.github.com/early-access/integrations/), and
     1. [OAuth applications](https://developer.github.com/v3/oauth/).
-    
+
     Currently, the only approved entity is the [Codecov](https://codecov.io/) integration, which helps us test our package code and quantify its coverage ("Improve code quality. Expose bugs and security vulnerabilities.").  Codecov must be explicitly turned on for each desired repository.
