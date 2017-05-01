@@ -98,6 +98,7 @@ A starting template is
 | IRB                 | [`/documentation/irb/`](documentation/irb/)                                              | Location of documents submitted & approved by the IRB                           |
 | IRB Expiration date | 2017-011-11                                                                              | Date when IRB reapproved is required.                                           |
 | Project Tracker     | https://bbmc.ouhsc.edu/redcap/redcap_v7.3.2/DataEntry/record_home.php?pid=80&id=49&arm=1 | Used internally by BBMC.                                                        |
+| Stats for IRB       |                                                                                          | Code or reports informing continuing reviews submitted to the IRB.              |
 
 ## Abstract
 > (paste from IRB Research Protocol)
