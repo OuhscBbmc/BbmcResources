@@ -35,12 +35,12 @@ Paste this block into a new issue called *GitHub Repo Settings*:
 - [ ] Add repo description like `{pi-name} (PI): "{project-title}"` (eg, 'Ryan Blucker (PI): "Prevalence rates of overweight Foster care children and adolescents in in a Primary Care clinic setting"')
 - [ ] initialize GitHub team
     - [ ] [create team](https://help.github.com/articles/creating-a-team/) called `{project-name}-push-pull` (*e.g.*, `marin-dka-1-push-ull`)
-    - [ ] [add](https://help.github.com/articles/maintaining-teams/) appropriate CDW staff.
+    - [ ] [add](https://help.github.com/articles/maintaining-teams/) appropriate CDW/BBMC staff.
     - [ ] add researchers/collaborators, once their GitHub account is created.  If they're not currently a member of the [OuhscBbmc team](https://github.com/OuhscBbmc), they'll need to accept the emailed invitation.
     - [ ] [add](https://help.github.com/articles/managing-team-access-to-an-organization-repository/) the appropriate repository.
 - [ ] Add [topics](https://help.github.com/articles/about-topics/).  
     * All CDW projects should be labeled w/ [`bbmc-collaborator`](https://github.com/search?q=topic%3Abbmc-collaborator+org%3AOuhscBbmc&type=Repositories) and [`emr`](https://github.com/search?q=topic%3Aemr+org%3AOuhscBbmc&type=Repositories).
-    * Add a topic or tw for the content/field of the research (eg, ['obesity'](https://github.com/search?q=topic%3Aobesity+org%3AOuhscBbmc&type=Repositories),  ['asthma'](https://github.com/search?q=topic%3Aasthma+org%3AOuhscBbmc&type=Repositories)).
+    * Add a topic or two for the content/field of the research (eg, ['obesity'](https://github.com/search?q=topic%3Aobesity+org%3AOuhscBbmc&type=Repositories),  ['asthma'](https://github.com/search?q=topic%3Aasthma+org%3AOuhscBbmc&type=Repositories)).
 
 ```
 
