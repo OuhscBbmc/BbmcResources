@@ -67,24 +67,23 @@ The BBMC DBA should run the following sql after changing the user and database n
 USE [master]
 GO
 DECLARE @qualified_user_name nvarchar(255); SET @qualified_user_name = '[OUHSC\smandem]' 
-DECLARE @database_name nvarchar(255); SET @database_name = '[cdw_cache_staging]'
+DECLARE @database_name       nvarchar(255); SET @database_name       = '[cdw_cache_staging]'
 
 -- Nothing below this point should require modification.
 DECLARE @create_login nvarchar(255); SET @create_login = 'CREATE LOGIN ' + @qualified_user_name + ' FROM WINDOWS ' -- WITH DEFAULT_DATABASE=[master]'
-DECLARE @use nvarchar(max); SET @use = 'USE ' + @database_name + ';'
-DECLARE @create_user nvarchar(255); SET @create_user = 'CREATE USER ' + @qualified_user_name + ' FOR LOGIN ' + @qualified_user_name
+DECLARE @use          nvarchar(max); SET @use          = 'USE ' + @database_name + ';'
+DECLARE @create_user  nvarchar(255); SET @create_user  = 'CREATE USER ' + @qualified_user_name + ' FOR LOGIN ' + @qualified_user_name
 
-print 'login & user name: ' + @qualified_user_name;
-print 'database to modify: ' + @database_name; --print ''
-print '------------------------------------'
-print 'user creation : ' + @create_user
+print 'login & user name: '  + @qualified_user_name;
+print 'database to modify: ' + @database_name;
+print 'user created: '       + @create_user
 
 EXEC (
-	@use + ';' +
-	@create_user + ';'+
-
-	'exec sp_addrolemember N''db_datareader '',' + @qualified_user_name +';'+
-	'exec sp_addrolemember N''db_datawriter '',' + @qualified_user_name +';'
+    @use + ';' +
+    @create_user + ';'+
+    
+    'exec sp_addrolemember N''db_datareader '',' + @qualified_user_name +';'+
+    'exec sp_addrolemember N''db_datawriter '',' + @qualified_user_name +';'
 )
 
 ```
