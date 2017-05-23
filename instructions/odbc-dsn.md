@@ -64,20 +64,24 @@ The BBMC DBA should run the following sql after changing the user and database n
 *The dynamic `USE` statement isn't working yet.  We need to find a way to use it programmatically.*
 
 ```sql
+DECLARE @qualified_user_name nvarchar(255); SET @qualified_user_name = '[OUHSC\wpreston]' 
+DECLARE @database_name       nvarchar(255); SET @database_name       = '[go_round_in_circles]'
+
+--== Nothing below this point should require modification. ==--
+
+-- Server-wide modifications.
 USE [master]
 GO
-DECLARE @qualified_user_name nvarchar(255); SET @qualified_user_name = '[OUHSC\smandem]' 
-DECLARE @database_name       nvarchar(255); SET @database_name       = '[cdw_cache_staging]'
 
--- Nothing below this point should require modification.
 DECLARE @create_login nvarchar(255); SET @create_login = 'CREATE LOGIN ' + @qualified_user_name + ' FROM WINDOWS ' -- WITH DEFAULT_DATABASE=[master]'
 DECLARE @use          nvarchar(max); SET @use          = 'USE ' + @database_name + ';'
-DECLARE @create_user  nvarchar(255); SET @create_user  = 'CREATE USER ' + @qualified_user_name + ' FOR LOGIN ' + @qualified_user_name
+DECLARE @create_user  nvarchar(255); SET @create_user  = 'CREATE USER '  + @qualified_user_name + ' FOR LOGIN ' + @qualified_user_name
 
 print 'login & user name: '  + @qualified_user_name;
 print 'database to modify: ' + @database_name;
 print 'user created: '       + @create_user
 
+-- Database-specific modifications.
 EXEC (
     @use + ';' +
     @create_user + ';'+
