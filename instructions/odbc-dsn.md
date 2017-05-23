@@ -66,35 +66,27 @@ The BBMC DBA should run the following sql after changing the user and database n
 ```sql
 USE [master]
 GO
-DECLARE @qualified_user_name nvarchar(255); SET @qualified_user_name = '[OUHSC\wpreston]'
-DECLARE @database_name nvarchar(255); SET @database_name = '[go_round_in_circles]'
+DECLARE @qualified_user_name nvarchar(255); SET @qualified_user_name = '[OUHSC\smandem]' 
+DECLARE @database_name nvarchar(255); SET @database_name = '[cdw_cache_staging]'
 
+-- Nothing below this point should require modification.
 DECLARE @create_login nvarchar(255); SET @create_login = 'CREATE LOGIN ' + @qualified_user_name + ' FROM WINDOWS ' -- WITH DEFAULT_DATABASE=[master]'
-DECLARE @use nvarchar(max); SET @use = 'USE ' + @database_name
+DECLARE @use nvarchar(max); SET @use = 'USE ' + @database_name + ';'
 DECLARE @create_user nvarchar(255); SET @create_user = 'CREATE USER ' + @qualified_user_name + ' FOR LOGIN ' + @qualified_user_name
 
 print 'login & user name: ' + @qualified_user_name;
-print 'database to modify: ' + @database_name; print ''
+print 'database to modify: ' + @database_name; --print ''
 print '------------------------------------'
-
-USE [master]
-
---print 'login creation: ' + @create_login
--- EXECUTE sp_executesql @create_login
-
-print 'database use  : ' + @use
-
---USE [go_round_in_circles]
-EXECUTE sp_executesql @use
-
 print 'user creation : ' + @create_user
-EXECUTE sp_executesql @create_user
 
-print 'add datareader'
-EXEC sp_addrolemember N'db_datareader ', @qualified_user_name
+EXEC (
+	@use + ';' +
+	@create_user + ';'+
 
-print 'add datawriter'
-EXEC sp_addrolemember N'db_datawriter ', @qualified_user_name
+	'exec sp_addrolemember N''db_datareader '',' + @qualified_user_name +';'+
+	'exec sp_addrolemember N''db_datawriter '',' + @qualified_user_name +';'
+)
+
 ```
 
-*last revised 2017-03-30 by Will Beasley*
+*last revised 2017-05-23 by Will Beasley*
