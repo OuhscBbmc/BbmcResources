@@ -26,6 +26,8 @@
 * **after they respond** with their GitHub username and you've added it to the [GitHub team](https://help.github.com/articles/maintaining-teams/), send an email along the lines of:
 
     Thanks for sending us your GitHub username.  I've added your name to the repository.  To view it, you'll first need to accept the automated email from GitHub (that confirms you want to join the OuhscBbmc organization).  Then you'll have access to https://github.com/OuhscBbmc/{project-name}.  Tell me if you still see a 404 error.
+    
+    GitHub has several [notification thresholds](https://help.github.com/articles/watching-repositories/).  We suggest that you enable the 'Not Watching' level.  You'll be notified for issues that someone explicitly tagged you, but not for issues that don't involve you.  (Please do *not* choose the 'Ignore' level.)  This affects only the email notifications you receive --all issues will be accessible to you at any time; just go to the repo's "Issue" tab.  
 
 ### Repo Settings
 
