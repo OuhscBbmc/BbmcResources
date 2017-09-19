@@ -151,3 +151,26 @@ Our core-wide goal of being [secure by default](https://en.wikipedia.org/wiki/Se
     1. [OAuth applications](https://developer.github.com/v3/oauth/).
 
     Currently, the only approved entity is the [Codecov](https://codecov.io/) integration, which helps us test our package code and quantify its coverage ("Improve code quality. Expose bugs and security vulnerabilities.").  Codecov must be explicitly turned on for each desired repository.
+
+### Justification
+
+(*Written in 2017 to justify the service to an IT department.*)
+Git and GitHub are the de facto version control software and hosting solution for software development in modern data science.  Using GitHub will help our group with three critical tasks: (a) developing our own software, (b) leveraging innovations of others, and (c) attracting top talent.
+
+**Developing Software**: Version control is critical for developing quality software, especially when multiple data scientists are contributing to the same code bank.  Among modern version control software, Git and GitHub are the most popular for new projects, especially among the talent pool that we recruit from.  Compared to outdated approaches using conventional file-servers, version control substantially increases productivity.  Analysts can develop code & report in parallel, and then combine when their branch is mature.  Additionally, all commits are saved indefinitely, allowing us to 'turn back the clock' are resurrect older code when necessary.  It also allows us to organize and manage our proprietary code in a single (distributed) location.
+
+Given the needs of our small data science team, we believe that private GitHub repositories (secured with two-factor authentication) strike a nice balance between (a) security, (b) ease of use for developers, (c) ease of maintenance for administrators, and (d) cost.
+
+**Leveraging Innovation**: Most cutting-edge data science algorithms are released on GitHub.  These algorithms are not stand-alone software; instead they augment the statistical software, R, which has been approved by IT.  Furthermore, GitHub.com hosts the documentation and user forums for most data science algorithms.  Without access to this information, we are at greater risk of misunderstanding and misusing the routines, which could weaken the accuracy of the financial reports we produce.
+
+**Attracting Talent**: As we compete for the top talent in the highly competitive field of data science, we want to provide access its standard tools.  We do not want to send the message that our organization doesn't value the advancements appreciated and employed by our competitors.
+
+**Alternatives**:
+* GitHub Enterprise: hosting solution developed by GitHub, but hosted on a BNP-controlled VM.
+* GitLab:  A competitor to GitHub.  GitLab uses Git, but has a different hosting options
+* Mercurial: modern version control that is similar to Git.  It has many of Git’s strengths and avoids many of the undesirable features of Subversion/SVN.
+* Atlassian: A competitor to GitHub that focuses on businesses.  Altassian/Bitbucket repositories can use Git or Mercurial.  Like GitHub and GitLab, offers different hosting options.
+
+**Resources**:
+1. GitHub for Business
+2. Git for Teams
