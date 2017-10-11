@@ -31,7 +31,7 @@ Maintaining the R Ecosystem
 1. Run [`install-packages.R`](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/install-packages.R).  Under the covers this will install a [list of packages](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/package-dependency-list.csv) that we've selected as important for most of our repositories.  If you see any missing, email me or create a [pull request](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/pulls); it will make things smother for future updates, and new collaborators too.
 1. If you're working on a repository that is also an R package (*i.e.*, [miechv-3](https://github.com/OuhscBbmc/miechv-3)), run this code to install and update any additional packages (including those on GitHub).
     ```r
-    install.packages("remotes")
+    if( !require("remotes") ) install.packages("remotes")
     update(remotes::dev_package_deps())
     ```
 
