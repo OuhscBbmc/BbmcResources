@@ -3,6 +3,11 @@ Maintaining the R Ecosystem
 
 [Installation instructions](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/ResourcesInstallation.md) are described elsewhere.  This document focuses on maintaining R and the software around it.
 
+**Motivation**: 
+Developing and debugging across machines is difficult enough when everyone is using the same configuration.  When software or packages versions aren't aligned across machines, a lot of time is wasted.  To reduce this waste, please keep  everything updated, especially when you hit a problem.  I'm not going to provide help to anyone using an outdated configuration.
+
+**Communication**: be ready to report the results of `devtools::session_info()`.
+
 ### R 
 * *Purpose*: the engine that powers that does the real work.
 * *Upgrading to a new version*: [download](https://cran.rstudio.com/bin/windows/base/rpatched.html) and install of a new version.  
@@ -26,13 +31,18 @@ Maintaining the R Ecosystem
 * *Frequency*: every few months.  Get in the habit of upgrading it when you upgrade R.  It won't be necessary some of those time, but it's almost easier to do it anyway, than compare the version number on the [website](https://cran.r-project.org/bin/windows/Rtools/VERSION.txt) to the version number on your local machine.
 
 ### R Packages
-* When R is upgraded, the packages need attention too.  There are several ways to do it, and here is the way that we'll support.
-1. Clone/pull the most recent version of [RedcapExamplesAndPatterns](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/).  Open up the Rproj file in RStudio.
-1. Run [`install-packages.R`](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/install-packages.R).  Under the covers this will install a [list of packages](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/package-dependency-list.csv) that we've selected as important for most of our repositories.  If you see any missing, email me or create a [pull request](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/pulls); it will make things smother for future updates, and new collaborators too.
-1. If you're working on a repository that is also an R package (*i.e.*, [miechv-3](https://github.com/OuhscBbmc/miechv-3)), run this code to install and update any additional packages (including those on GitHub).
+* *Purpose*: extend the functionality of R beyond the base features.  When R is upgraded, the packages need attention too.  There are several ways to do it, and here is the way that we'll support.
+* *Upgrading to a new version*:
+    1. Clone/pull the most recent version of [RedcapExamplesAndPatterns](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/).  Open up the Rproj file in RStudio.
+    1. Run [`install-packages.R`](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/install-packages.R).  Under the covers this will install a [list of packages](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/package-dependency-list.csv) that we've selected as important for most of our repositories.  If you see any missing, email me or create a [pull request](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/pulls); it will make things smoother for future updates, and new collaborators too.
+    1. If you're working on a repository that is also an R package (*i.e.*, [miechv-3](https://github.com/OuhscBbmc/miechv-3)), run this code to install and update any additional packages (including those on GitHub).
     ```r
     if( !require("remotes") ) install.packages("remotes")
     update(remotes::dev_package_deps())
     ```
+* *Removing old version*: the old version of a package is not retained, so you don't have to uninstall anything.      
+* *Frequency*: 
+    1. The [`install-packages.R`](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/install-packages.R) file needs to run only when R is upgraded.
+    1. The `update(remotes::dev_package_deps())` command should be run ~1/week.
 
 *Document started 2017-10-10 and last updated 2017-10-10.*
