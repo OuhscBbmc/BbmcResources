@@ -20,7 +20,8 @@ Developing and debugging across machines is difficult enough when everyone is us
 * *Upgrading to a new version*: RStudio requires a download and installation of a new version.  
 * *Removing old version*: the old version of RStudio is not retained, so you don't have to uninstall anything.  
 * *Frequency*: every few months.  Get in the habit of upgrading it when you upgrade R. 
-* *Retaining settings*: RStudio saves many small, but useful settings, such as font size and panel locations. If something goes wrong with RStudio, re-installing might not fix the issue, because your personal preferences aren't erased. To be safe, you can be thorough and delete the equivalent of `C:\Users\beasley\AppData\Local\RStudio-Desktop\`. The options settings are stored (and can be manipulated) in this extentionless text file: `C:\Users\beasley\AppData\Local\RStudio-Desktop\monitored\user-settings\user-settings`. 
+* *Retaining settings*: RStudio saves many small, but useful settings, such as font size and panel locations. If something goes wrong with RStudio, re-installing might not fix the issue, because your personal preferences aren't erased. To be safe, you can be thorough and delete the equivalent of `C:\Users\beasley\AppData\Local\RStudio-Desktop\`. The options settings are stored (and can be manipulated) in this extentionless text file: `C:\Users\beasley\AppData\Local\RStudio-Desktop\monitored\user-settings\user-settings`.
+* *Ubuntu*: download the *.deb file and run something like `sudo gdebi rstudio-xenial-1.1.383-amd64.deb`. 
 * *Decisions*: choose between the latest [stable](https://www.rstudio.com/products/rstudio/download/) and [preview](https://www.rstudio.com/products/rstudio/download/preview/) editions.  The former is usually more stable, while the latter has newer features.
 
 
