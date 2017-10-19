@@ -26,8 +26,22 @@
 * **after they respond** with their GitHub username and you've added it to the [GitHub team](https://help.github.com/articles/maintaining-teams/), send an email along the lines of:
 
     Thanks for sending us your GitHub username.  I've added your name to the repository.  To view it, you'll first need to accept the automated email from GitHub (that confirms you want to join the OuhscBbmc organization).  Then you'll have access to https://github.com/OuhscBbmc/{project-name}.  Tell me if you still see a 404 error.
-    
+
     GitHub has several [notification thresholds](https://help.github.com/articles/watching-repositories/).  We suggest that you enable the 'Not Watching' level.  You'll be notified for issues that someone explicitly tagged you, but not for issues that don't involve you.  (Please do *not* choose the 'Ignore' level.)  This affects only the email notifications you receive --all issues will be accessible to you at any time; just go to the repo's "Issue" tab.  
+
+### Repo Creation
+
+Only the three [owners](https://help.github.com/articles/repository-permission-levels-for-an-organization/) of the [OuhscBbmc](https://github.com/OuhscBbmc) organization has permission for these steps.
+
+1. Create a [new repository](https://github.com/organizations/OuhscBbmc/repositories/new) called {project_name} (*e.g.*, `marin-dka-1`).  While in this page,
+    1. Set the repo to ['private'](https://help.github.com/articles/creating-a-new-repository/), which is the default for our the [OuhscBbmc](https://github.com/OuhscBbmc) organization.
+    1. Initialize the README file.
+    1. Set the .gitignore file to 'R',
+    1. Set the license to 'GPL-3'.
+1. Modify the [`cdw-admin`](https://github.com/orgs/OuhscBbmc/teams/cdw-admin/repositories) GitHub team.
+    1. Add the repository to the list of previous CDW projects.
+    1. Set the privileges to 'Admin'.
+    1. Double-check that the team includes only the four CDW members (*i.e.*, @DavidBard, @wibeasley, @mand9472, & @athumann).
 
 ### Repo Settings
 
