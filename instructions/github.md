@@ -4,7 +4,7 @@
 
 * **email to**: {collaborators}
 
-* **email cc**: Zabrina Antry; David Bard; Sreeharsha Mandem
+* **email cc**: Ashley Thumann; David Bard; Sreeharsha Mandem
 
 * **email subject**: CDW {project-name}: please create a GitHub account to better collaborate with us (email 3 of 3)
 
