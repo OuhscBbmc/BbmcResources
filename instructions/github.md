@@ -2,6 +2,8 @@
 
 ### GitHub User Account Creation
 
+This email can be sent by anyone on the CDW team.  Copy the content below, then replace the placeholders in curly braces with the project-specific values, and finally sent the email.
+
 * **email to**: {collaborators}
 
 * **email cc**: Ashley Thumann; David Bard; Sreeharsha Mandem
@@ -45,7 +47,8 @@ Only the three [owners](https://help.github.com/articles/repository-permission-l
 
 ### Repo Settings
 
-Paste this block into a new issue called *GitHub Repo Settings*:
+Paste this block into a new issue called *GitHub Repo Settings*.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
+
 ```
 - [ ] double-check the repo is private.  (It should have a lock icon and say 'Private' new the repo name.)
 - [ ] Add repo description like `{pi-name} (PI): "{project-title}"` (eg, 'Ryan Blucker (PI): "Prevalence rates of overweight Foster care children and adolescents in in a Primary Care clinic setting"')
@@ -62,7 +65,7 @@ Paste this block into a new issue called *GitHub Repo Settings*:
 
 ### Populate Repo
 
-Paste this block into a new issue called *Add skeleton*:
+Paste this block into a new issue called *Add skeleton*.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
 ```
 Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalysisSkeleton):
 - [ ] `analysis/` (including report example)
@@ -82,7 +85,8 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 
 ### Initialize README in root directory
 
-Paste this block into a new issue called *Initialize README*.
+Paste this block into a new issue called *Initialize README*.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
+
 ```
 In the project's intro page, include the following
 
@@ -127,9 +131,10 @@ A starting template is
 
 ### IRB-Approved personnel
 
-Paste this block into a new issue called *Check IRB-approved personnel*.
+Paste this block into a new issue called *Check IRB-approved personnel*.    This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
+
 ```
-@zantry, please check that everyone (with access to the S drive and to the REDCap cache) have been approved by the IRB to view PHI related to this project.  This includes
+@athumann, please check that everyone (with access to the S drive and to the REDCap cache) have been approved by the IRB to view PHI related to this project.  This includes
 - [ ] CDW/BBMC staff
 - [ ] Investigators, project managers, research assistants, etc
 
@@ -139,6 +144,7 @@ Then please
 ```
 
 ### Organization-wide defaults and practices
+
 Our core-wide goal of being [secure by default](https://en.wikipedia.org/wiki/Secure_by_default) applies to GitHub too.  Some security measures have to be added explicitly (*e.g.*, `.gitignore` blocking common data files like `*.csv` & `*.xlsx`), but these organization-wide settings make new repo more secure as soon as their initialized, even at the cost of accessibility.
 
 *Defaults*
