@@ -45,9 +45,20 @@ Only the three [owners](https://help.github.com/articles/repository-permission-l
     1. Set the privileges to 'Admin'.
     1. Double-check that the team includes only the four CDW members (*i.e.*, @DavidBard, @wibeasley, @mand9472, & @athumann).
 
+### User Initialization
+
+Paste this block into a new issue called **User Initialization**. This issue can be created by anyone on the CDW team. Replace the placeholders in curly braces with the project-specific values.
+
+```
+Email collaborators about:
+- [ ] [OUHSC account names & the BBMC fileserver](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/username.md)
+- [ ] [REDCap](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/redcap.md)
+- [ ] [GitHub](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/github.md#github-user-account-creation)
+```
+
 ### Repo Settings
 
-Paste this block into a new issue called *GitHub Repo Settings*.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
+Paste this block into a new issue called **GitHub Repo Settings**.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
 
 ```
 - [ ] double-check the repo is private.  (It should have a lock icon and say 'Private' new the repo name.)
@@ -65,7 +76,7 @@ Paste this block into a new issue called *GitHub Repo Settings*.  This issue can
 
 ### Populate Repo
 
-Paste this block into a new issue called *Add skeleton*.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
+Paste this block into a new issue called **Add skeleton**.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
 ```
 Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalysisSkeleton):
 - [ ] `analysis/` (including report example)
@@ -85,7 +96,7 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 
 ### Initialize README in root directory
 
-Paste this block into a new issue called *Initialize README*.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
+Paste this block into a new issue called **Initialize README**.  This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
 
 ```
 In the project's intro page, include the following
@@ -131,7 +142,7 @@ A starting template is
 
 ### IRB-Approved personnel
 
-Paste this block into a new issue called *Check IRB-approved personnel*.    This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
+Paste this block into a new issue called **Check IRB-approved personnel**.    This issue can be created by anyone on the CDW team.  Replace the placeholders in curly braces with the project-specific values.
 
 ```
 @athumann, please check that everyone (with access to the S drive and to the REDCap cache) have been approved by the IRB to view PHI related to this project.  This includes
