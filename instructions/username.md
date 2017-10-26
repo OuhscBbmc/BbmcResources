@@ -5,7 +5,7 @@
 
 * **email to**: {collaborators}
 
-* **email cc**: Geneva Marshall; Ashley Thumann; David Bard; Sreeharsha Mandem; Will  Beasley
+* **email cc**: Geneva Marshall; Ashley Thumann; David Bard; Sreeharsha Mandem; Will Beasley
 
 * **email subject**: CDW [{project-name}]: What are the OUHSC usernames of your team? (email 1 of 3)
 

@@ -14,10 +14,10 @@ This email can be sent by anyone on the CDW team.  Copy the content below, then 
 
     Hi zzz, we use GitHub (https://github.com) to manage a lot of the BBMC assignments, code, and aggregated/de-identified reports.  To be clear, no data or PHI gets on GitHub (or ever leaves IT-approved storage devices, like file servers or databases).
 
-    I created a private repo for the upcoming reporting projects that we hope to work with you on.  Could you please:
+    We created a private repo for the upcoming reporting projects that we hope to work with you on.  Could you please:
 
     1. Create a free GitHub user account at https://github.com/.  (Instructions are at https://github.com/join.)
-    2. Ideally your profile has your name and institution.  (That way, we're not worried about selecting the wrong "Will Beasley" when I'm choosing between "wibeasley", "wbeasley", or "wibeasley2001".
+    2. When creating your profile, please add at least your name and institution.  (That way, we're not worried about selecting the wrong "Will Beasley" when I'm choosing between "wibeasley", "wbeasley", or "wibeasley2001".
     3. Turn on "Two-Factor Authentication". (This adds an extra layer of security.  Instructions are at https://help.github.com/articles/about-two-factor-authentication/.)
     4. Email us your GitHub username.  We'll add you as an official collaborator on a specific GitHub repository.
     5. You'll get an email to confirm that you'd like to join the new repository.
@@ -64,14 +64,13 @@ Paste this block into a new issue called **GitHub Repo Settings**.  This issue c
 - [ ] double-check the repo is private.  (It should have a lock icon and say 'Private' new the repo name.)
 - [ ] Add repo description like `{pi-name} (PI): "{project-title}"` (eg, 'Ryan Blucker (PI): "Prevalence rates of overweight Foster care children and adolescents in in a Primary Care clinic setting"')
 - [ ] initialize GitHub team
-    - [ ] [create team](https://help.github.com/articles/creating-a-team/) called `{project-name}-push-pull` (*e.g.*, `marin-dka-1-push-ull`)
-    - [ ] [add](https://help.github.com/articles/maintaining-teams/) appropriate CDW/BBMC staff.
-    - [ ] add researchers/collaborators, once their GitHub account is created.  If they're not currently a member of the [OuhscBbmc team](https://github.com/OuhscBbmc), they'll need to accept the emailed invitation.
-    - [ ] [add](https://help.github.com/articles/managing-team-access-to-an-organization-repository/) the appropriate repository.
+    - [ ] [create team](https://github.com/orgs/OuhscBbmc/new-team) called `{project-name}-push-pull` (*e.g.*, `marin-dka-1-push-pull`).  ([Info](https://help.github.com/articles/organizing-members-into-teams/) about teams.)
+    - [ ] Add appropriate CDW/BBMC staff.
+    - [ ] add researchers/collaborators, once they create their own GitHub account.  If they're not currently a member of the [OuhscBbmc team](https://github.com/OuhscBbmc), they'll need to accept the emailed invitation.  If they can't find the invitation emailed to them, they should see a banner if they go to https://github.com/OuhscBbmc (that asks if they accept our invitation to join our organization).
+    - [ ] add the appropriate repository.  ([Info](https://help.github.com/articles/managing-team-access-to-an-organization-repository/) )
 - [ ] Add [topics](https://help.github.com/articles/about-topics/).  
     * All CDW projects should be labeled w/ [`bbmc-collaborator`](https://github.com/search?q=topic%3Abbmc-collaborator+org%3AOuhscBbmc&type=Repositories) and [`clinical-data-warehouse`](https://github.com/search?q=topic%3Aclinical-data-warehouse+org%3AOuhscBbmc&type=Repositories).
     * Add a topic or two for the content/field of the research (eg, ['obesity'](https://github.com/search?q=topic%3Aobesity+org%3AOuhscBbmc&type=Repositories),  ['asthma'](https://github.com/search?q=topic%3Aasthma+org%3AOuhscBbmc&type=Repositories)).
-
 ```
 
 ### Populate Repo
