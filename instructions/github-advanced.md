@@ -11,7 +11,9 @@ I've never had good luck with the [revert](https://git-scm.com/docs/git-revert) 
     > There was problem with the merges and the status of some code is in limbo. Please don't make any changes to this repo for a few minutes while I straighten it.
 1. Use the GitHub website to create a branch called `master-bad-1` (pointing at the current commit of the master).
 1. Move the master back to the last good commit with `git checkout master; git pull; git reset --hard f3423` (replace the commit SHA)
+    * source: [How to move HEAD back to a previous location?](https://stackoverflow.com/a/34519716/1082435)
 1. Force push it to the central repo `git push -f`
+    * be aware that this could cause problems with other collaborators, depending on when they last updated their local repo.  See [these comments](https://stackoverflow.com/a/25020108/1082435).
 1. If the spoiled master contained some good commits that the new master doesn't:
     1. create a dev branch from the last good commit (before it was poorly merged w/ the master) called something like `dev-2` from the GitHub webpage.  Use the history (and browse files button) to jump off from the correct commit.
     1. on your local machine, pull the new branch, then update it with the new master, then push it back to the central repo.
