@@ -88,7 +88,8 @@ Copy repo skeleton from [RAnalysisSkeleton](https://github.com/wibeasley/RAnalys
 - [ ] `.gitignore` text file
     * for CDW projects, copy & rename `./utility/eager.gitignore` to `./.gitignore`,  either
         * within RStudio
-        * command prompt with `mv ./utility/eager.gitignore .gitignore`
+        * command line with `mv ./utility/eager.gitignore .gitignore` for UNIX
+        * command prompt with `move ./utility/eager.gitignore .gitignore` for WINDOWS
 - [ ] Rproj file (and rename to '{project-name}.Rproj'; eg, 'marin-dka-1.Rproj')
 
 ```
