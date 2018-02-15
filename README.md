@@ -12,6 +12,7 @@ Here is a table of contents of BBMC materials included in this repository, and o
     * [Guidelines](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/redcap_creation_guidelines.md) for creating a project.
     * [Training](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/tree/master/DocumentationGlobal/TrainingDocuments) documents.
 1. Gaining [fileserver privileges](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/username.md), especially for CDW researchers.
+1. Spinning up a [CDW investigation](https://github.com/OuhscBbmc/prairie-outpost-public/blob/master/documentation/services/spinup-investigation.md).
 
 ### For Analysts
 1. [Installing](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/ResourcesInstallation.md) our data science ecosystem.
