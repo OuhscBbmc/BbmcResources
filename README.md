@@ -27,7 +27,12 @@ Here is a table of contents of BBMC materials included in this repository, and o
 
 ### For BBMC Members
 (requires permissions)
+1. [Database support](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/services/database-services.md) tiers.
+
+### For BBMC Server Admins
+(requires permissions)
 1. [CDW Maintenance](https://github.com/OuhscBbmc/bbmc-database-management/tree/master/maintenance) documents.
 1. [Database backup](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/backup-plan/backup-plan.md) plans.
 1. [Rebuilding a VDI](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/vdi-rebuild/vdi-rebuild.md) after its reset.
-1. [Database support](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/services/database-services.md) tiers.
+1. [Installing RStudio and Shiny](https://github.com/OuhscBbmc/bbmc-database-management/tree/master/maintenance/install-shiny) in Ubuntu and Red Hat Linux.
+1. [REDCap](https://github.com/OuhscBbmc/bbmc-database-management/tree/master/maintenance/redcap) notes.
