@@ -197,7 +197,7 @@ Given the needs of our small data science team, we believe that private GitHub r
 **Attracting Talent**: As we compete for the top talent in the highly competitive field of data science, we want to provide access its standard tools.  We do not want to send the message that our organization doesn't value the advancements appreciated and employed by our competitors.
 
 **Alternatives**:
-* GitHub Enterprise: hosting solution developed by GitHub, but hosted on a BNP-controlled VM.
+* GitHub Enterprise: hosting solution developed by GitHub, but hosted on a university-controlled VM.
 * GitLab:  A competitor to GitHub.  GitLab uses Git, but has a different hosting options
 * Mercurial: modern version control that is similar to Git.  It has many of Git’s strengths and avoids many of the undesirable features of Subversion/SVN.
 * Atlassian: A competitor to GitHub that focuses on businesses.  Altassian/Bitbucket repositories can use Git or Mercurial.  Like GitHub and GitLab, offers different hosting options.
