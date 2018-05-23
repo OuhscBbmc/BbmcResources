@@ -34,16 +34,15 @@ Developing and debugging across machines is difficult enough when everyone is us
 ### R Packages
 * *Purpose*: extend the functionality of R beyond the base features.  When R is upgraded, the packages need attention too.  There are several ways to do it, and here is the way that we'll support.
 * *Upgrading to a new version*:
-    1. Clone/pull the most recent version of [RedcapExamplesAndPatterns](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/).  Open up the Rproj file in RStudio.
-    1. Run [`install-packages.R`](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/install-packages.R).  Under the covers this will install a [list of packages](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/package-dependency-list.csv) that we've selected as important for most of our repositories.  If you see any missing, email me or create a [pull request](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/pulls); it will make things smoother for future updates, and new collaborators too.
+    1. Follow the first-time [package installation instructions](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/ResourcesInstallation.md#installation-required) when R is install/upgraded.
     1. If you're working on a repository that is also an R package (*i.e.*, [miechv-3](https://github.com/OuhscBbmc/miechv-3)), run this code to install and update any additional packages (including those on GitHub).
-    ```r
-    if( !require("remotes") ) install.packages("remotes")
-    update(remotes::dev_package_deps())
-    ```
+        ```r
+        if( !require("remotes") ) install.packages("remotes")
+        update(remotes::dev_package_deps())
+        ```
 * *Removing old version*: the old version of a package is not retained, so you don't have to uninstall anything.      
 * *Frequency*: 
-    1. The [`install-packages.R`](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/utility/install-packages.R) file needs to run only when R is upgraded.
+    1. The `package_janitor_remote()` function needs to run only when R is installed upgraded.  If you seem to be missing some packages, it wouldn't hurt to run more frequently.  There might have been some we added recently to the list.
     1. The `update(remotes::dev_package_deps())` command should be run ~1/week.
 
-*Document started 2017-10-10 and last updated 2017-10-10.*
+*Document started 2017-10-10 and last updated 2018-05-23.*
