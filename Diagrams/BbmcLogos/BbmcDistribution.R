@@ -37,6 +37,7 @@ g <- ggplot(data.frame(x=seq(from=0, to=10, length=5)), aes(x)) +
   theme(axis.ticks=element_line(colour=color1)) +
   theme(plot.margin = unit(c(0,0,0,0), "cm"))
 
+ggsave(plot=g, filename="./Diagrams/BbmcLogos/bbmc-distributions-background-clear-short.png", width=.5, height=.1, dpi=100, bg=NA, scale=20)
 ggsave(plot=g, filename="./Diagrams/BbmcLogos/BbmcDistributionsBackgroundClear.png", width=5.5, height=2.2, dpi=1200, bg=NA)
 ggsave(plot=g, filename="./Diagrams/BbmcLogos/BbmcDistributionsBackgroundWhite.png", width=5.5, height=2.2, dpi=1200, bg="white")
 # ggsave(filename="./Publications/Logos/BbmcDistributionsBackgroundClear.svg", width=5.5, height=2.2, dpi=400, bg=NA)
