@@ -35,4 +35,5 @@ Here is a table of contents of BBMC materials included in this repository, and o
 1. [Database backup](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/backup-plan/backup-plan.md) plans.
 1. [Rebuilding a VDI](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/vdi-rebuild/vdi-rebuild.md) after its reset.
 1. [Installing RStudio and Shiny](https://github.com/OuhscBbmc/bbmc-database-management/tree/master/maintenance/install-shiny) in Ubuntu and Red Hat Linux.
+1. [Granting access to the REDCap token server](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/code/redcap-admin/add-api-user-to-bbmc-security.sql).
 1. [REDCap](https://github.com/OuhscBbmc/bbmc-database-management/tree/master/maintenance/redcap) notes.
