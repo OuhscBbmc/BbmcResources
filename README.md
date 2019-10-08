@@ -9,7 +9,7 @@ Here is a table of contents of BBMC materials included in this repository, and o
 1. [GitHub](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/github.md) account creation, repository initiation, and justification.
 1. REDCap
     * [Account creation template](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/redcap.md), especially for new CDW researchers.
-    * [Guidelines](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/redcap_creation_guidelines.md) for creating a project.
+    * [Guidelines](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/redcap-creation-guidelines.md) for creating a high-quality REDCap project that is easy to maintain.
     * [Training](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/tree/master/DocumentationGlobal/TrainingDocuments) documents.
 1. Gaining [fileserver privileges](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/username.md), especially for CDW researchers.
 1. Spinning up a [CDW investigation](https://github.com/OuhscBbmc/prairie-outpost-public/blob/master/documentation/services/spinup-investigation.md).
