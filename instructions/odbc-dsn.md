@@ -6,13 +6,13 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 
 1. Ask a BBMC member for the following three values.  Although these aren't passwords, we don't like to publicize them, because their values could give a hacker a headstart.
 
-    1. **DSN Name**: which must match whatever value is specified in the client software (eg, R code or Access)
+    1. **DSN Name**: which must match whatever value is specified in the client software (*e.g.*, R code or Access)
 
     1. **Server Name**: describes the machine that contains the multiple BBMC databases
 
     1. **Database Name**: describes the database for your specific project
 
-1. Download and install the most recent ODBC driver for SQL Server, which is [V13.1](https://www.microsoft.com/en-us/download/details.aspx?id=53339) as of March 2017.  Unless otherwise specified, choose the 64-bit driver version.  (FAQ: [determining](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq) if your OS is 32-bit vs 64-bit.)
+1. Download and install [the most recent ODBC driver](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server) for SQL Server, which is V17 as of October 2019.  Unless otherwise specified, choose the 64-bit driver version.  (FAQ: [determining](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq) if your OS is 32-bit vs 64-bit.)
 
     You may not have admin privileges on your computer.  If not, it's probably best to request IT to install the driver.
 
@@ -20,7 +20,7 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 
     ![open-odbc-panel](images/open-odbc-panel.png)
 
-1. Create the Data Source.  Click 'Add', then select the newest SQL Server driver, then click 'Finish.'
+1. Create the Data Source.  Choose the ODBC version you downloaded & installed a few steps above.  Click 'Add', then select the newest SQL Server driver, then click 'Finish.'
 
     ![create-data-source](images/create-data-source.png)
 
