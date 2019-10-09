@@ -28,6 +28,7 @@ Here is a table of contents of BBMC materials included in this repository, and o
 ### For BBMC Members
 (requires permissions)
 1. [Database support](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/services/database-services.md) tiers.
+1. [Starting a new analyst](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/setting-up-analyst/setting-up-analyst.md) within our department involves a lot of little independent tasks.
 
 ### For BBMC Server Admins
 (requires permissions)
