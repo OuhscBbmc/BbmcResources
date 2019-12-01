@@ -15,7 +15,7 @@ Here is a table of contents of BBMC materials included in this repository, and o
 1. Spinning up a [CDW investigation](https://github.com/OuhscBbmc/prairie-outpost-public/blob/master/documentation/services/spinup-investigation.md).
 
 ### For Analysts
-1. [Installing](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/ResourcesInstallation.md) our data science ecosystem.
+1. [Installing](https://ouhscbbmc.github.io/data-science-practices-1/workstation.html) our data science ecosystem.
 1. [Maintaining](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/maintaining-r.md) our data science ecosystem.
 1. [ODBC](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/odbc-dsn.md) configurations to communicate with a database.
 1. [Report checklist](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/ReportChecklist.md) for analysts.
