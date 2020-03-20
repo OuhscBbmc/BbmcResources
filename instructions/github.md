@@ -6,7 +6,7 @@ This email can be sent by anyone on the CDW team.  Copy the content below, then 
 
 * **email to**: {collaborators}
 
-* **email cc**: Ashley Thumann; David Bard; Sreeharsha Mandem; Will  Beasley
+* **email cc**: Ashley Thumann; David Bard; Wale Oluborode; Will  Beasley
 
 * **email subject**: CDW [{project-name}]: please create a GitHub account to better collaborate with us (email 3 of 3)
 
