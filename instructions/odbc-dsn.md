@@ -16,6 +16,17 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 
     You may not have admin privileges on your computer.  If not, it's probably best to request IT to install the driver.
 
+1. You need a VPN to connect to protected, on-campus systems or resources that specifically require VPN access while using a University-owned device on a trusted network (home Internet or personal cellular/hotspot). 
+
+    1.  If you are off-campus, install Palo Alto GlobalProtect once. Then connect to it every day you need the ODBC connection. On-campus computers can skip this step.
+
+    1.	End Users must use VDI if connecting to protected, on-campus systems or resources while using personally-owned devices that do not meet University security standards. 
+
+        1. If you are off-campus and using a personally-owned or non-OU owned device, navigate to https://mydesk.ou.edu
+        1. You should have two options, a standalone installer and an option for HTML access. Select the option for “Install VMWare Horizon Client”.
+        1. You will now be linked to the VMWare download website. Select the “Go to Downloads” link for your operating system.
+        1. Next click the Download button for your download, you can either download locally and then click to launch the file, or select Run if prompted by your browser.
+
 1. Open the ODBC panel.  Click the Window's start button in the bottom left corner, and type 'ODBC'.  
 
     ![open-odbc-panel](images/open-odbc-panel.png)
