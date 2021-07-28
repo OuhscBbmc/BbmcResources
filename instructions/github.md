@@ -1,5 +1,7 @@
 # GitHub Tasks
 
+*Much of this material has been moved.  Please see https://ouhscbbmc.github.io/data-science-practices-1/git.html*
+
 ### GitHub User Account Creation
 
 This email can be sent by anyone on the CDW team.  Copy the content below, then replace the placeholders in curly braces with the project-specific values, and finally sent the email.
@@ -153,55 +155,3 @@ Then please
 - [ ] add the approved names to the `README.md` file in the repo's root directory.
 
 ```
-
-### Organization-wide defaults and practices
-
-Our core-wide goal of being [secure by default](https://en.wikipedia.org/wiki/Secure_by_default) applies to GitHub too.  Some security measures have to be added explicitly (*e.g.*, `.gitignore` blocking common data files like `*.csv` & `*.xlsx`), but these organization-wide settings make new repo more secure as soon as their initialized, even at the cost of accessibility.
-
-*Defaults*
-
-1. Two-factor authentication [is required](https://help.github.com/articles/requiring-two-factor-authentication-in-your-organization/) for all organization memebers and outside collaborators.  See setting "Security" => "Two-factor authentication"
-
-1. Organization members are [restricted from creating repositories](https://help.github.com/articles/repository-permission-levels-for-an-organization/#restricting-people-from-creating-repositories).  See setting "Member privileges" => "Repository creation".
-
-1. Organization members have [zero permissions on new repositories](https://help.github.com/articles/repository-permission-levels-for-an-organization/#restricting-people-from-creating-repositories).  See setting "Member privileges" => "Default repository permission"
-.
-
-*Practices*
-
-1. Authorized teammates outside OUHSC are designated as [outside collaborators](https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/), instead of "members".
-
-1. Only three people are [owners](https://help.github.com/articles/permission-levels-for-an-organization/) of the GitHub organization.  Everyone else must be explicitly added to each appropriate repository.  Other important restrictions to members include (a) cannot add/delete/transfer (private or public) repositories and (b) cannot add/delete other members to organization.
-
-1. Every week, an owner (probably @wibeasley) will review the [organization's audit log](https://github.com/organizations/OuhscBbmc/settings/audit-log) (which only owners can view).
-
-1. Two or more owners must discuss and agree upon adding/modifying/deleting any extra entity added to our GitHub Organization, including
-    1. [webhooks](https://developer.github.com/webhooks/),
-    1. [third-party applications](https://help.github.com/articles/about-third-party-application-restrictions/),
-    1. [installed integration](https://developer.github.com/early-access/integrations/), and
-    1. [OAuth applications](https://developer.github.com/v3/oauth/).
-
-    Currently, the only approved entity is the [Codecov](https://codecov.io/) integration, which helps us test our package code and quantify its coverage ("Improve code quality. Expose bugs and security vulnerabilities.").  Codecov must be explicitly turned on for each desired repository.
-
-### Justification
-
-(*Written in 2017 to justify the service to an IT department.*)
-Git and GitHub are the de facto version control software and hosting solution for software development in modern data science.  Using GitHub will help our group with three critical tasks: (a) developing our own software, (b) leveraging innovations of others, and (c) attracting top talent.
-
-**Developing Software**: Version control is critical for developing quality software, especially when multiple data scientists are contributing to the same code bank.  Among modern version control software, Git and GitHub are the most popular for new projects, especially among the talent pool that we recruit from.  Compared to outdated approaches using conventional file-servers, version control substantially increases productivity.  Analysts can develop code & report in parallel, and then combine when their branch is mature.  Additionally, all commits are saved indefinitely, allowing us to 'turn back the clock' are resurrect older code when necessary.  It also allows us to organize and manage our proprietary code in a single (distributed) location.
-
-Given the needs of our small data science team, we believe that private GitHub repositories (secured with two-factor authentication) strike a nice balance between (a) security, (b) ease of use for developers, (c) ease of maintenance for administrators, and (d) cost.
-
-**Leveraging Innovation**: Most cutting-edge data science algorithms are released on GitHub.  These algorithms are not stand-alone software; instead they augment the statistical software, R, which has been approved by IT.  Furthermore, GitHub.com hosts the documentation and user forums for most data science algorithms.  Without access to this information, we are at greater risk of misunderstanding and misusing the routines, which could weaken the accuracy of the financial reports we produce.
-
-**Attracting Talent**: As we compete for the top talent in the highly competitive field of data science, we want to provide access its standard tools.  We do not want to send the message that our organization doesn't value the advancements appreciated and employed by our competitors.
-
-**Alternatives**:
-* GitHub Enterprise: hosting solution developed by GitHub, but hosted on a university-controlled VM.
-* GitLab:  A competitor to GitHub.  GitLab uses Git, but has a different hosting options
-* Mercurial: modern version control that is similar to Git.  It has many of Git’s strengths and avoids many of the undesirable features of Subversion/SVN.
-* Atlassian: A competitor to GitHub that focuses on businesses.  Altassian/Bitbucket repositories can use Git or Mercurial.  Like GitHub and GitLab, offers different hosting options.
-
-**Resources**:
-1. GitHub for Business
-2. Git for Teams
