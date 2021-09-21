@@ -18,7 +18,7 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 
 1. You need a VPN to connect to protected, on-campus systems or resources that specifically require VPN access while using a University-owned device on a trusted network (home Internet or personal cellular/hotspot). 
 
-    1.  If you are off-campus, install Palo Alto GlobalProtect once. Then connect to it every day you need the ODBC connection. On-campus computers can skip this step.
+    1.  If you are having trouble connecting to a database server, you might need to contact the service desk.  Ask Andrew or Will for more instructions (located [in a private repo](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/setting-up-analyst/setting-up-analyst.md)).
 
     1.	End Users must use VDI if connecting to protected, on-campus systems or resources while using personally-owned devices that do not meet University security standards. 
 
