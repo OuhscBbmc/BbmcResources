@@ -3,9 +3,12 @@ Background: OUHSC has two production instances of REDCap: <https://bbmc.ouhsc.ed
 Completed steps
 ---------
 
-1. <redcap.ouhsc.edu> stops accepting new projects. (2022-08-10)
-1. Major upgrade of REDCap version from 10.5.1 to 12.5.2 for <bbmc.ouhsc.edu>. (2022-07-17)
-1. Migrate <bbmc.ouhsc.edu> to new hardware & server versions.  This will project new features and increased stability. (2022-07-17)
+1. 2022-08-10: <redcap.ouhsc.edu> stops accepting new projects. The current instance (<https://redcap.ouhsc.edu>) is no longer accepting *new* projects.  *Existing* projects on both instances are not affected.  Please create new projects at <https://bbmc.ouhsc.edu>.  If you haven’t used this instance before, you’ll receive an initial email to verify your user account.  
+
+    Your password is not affected; OUHSC users on either REDCap instances are authenticated with your OUHSC password (which can managed at https://www.ouhsc.edu/password).
+
+1. 2022-07-19: Major upgrade of REDCap version from 10.5.1 to 12.5.2 for <bbmc.ouhsc.edu>.
+1. 2022-07-17: Migrate <bbmc.ouhsc.edu> to new hardware & server versions.  This will project new features and increased stability.
 
 Future steps
 ---------
