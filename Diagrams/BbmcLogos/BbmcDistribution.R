@@ -11,14 +11,14 @@ interpolationPoints <- 1001
 g <- ggplot(data.frame(x=seq(from=0, to=10, length=5)), aes(x)) +
   geom_vline(xintercept=0, color=color2) +
   geom_hline(yintercept=0, color=color2) +
-  stat_function(fun = dchisq, args=list(df=1), colour=color2, size=lineSize, n=interpolationPoints) +
-  stat_function(fun = dchisq, args=list(df=2), colour=color2, size=lineSize, n=interpolationPoints) +
-  stat_function(fun = dchisq, args=list(df=3), colour=color1, size=lineSize, n=interpolationPoints) +
-  stat_function(fun = dchisq, args=list(df=4), colour=color1, size=lineSize, n=interpolationPoints) +
-  stat_function(fun = dchisq, args=list(df=5), colour=color2, size=lineSize, n=interpolationPoints) +
-  stat_function(fun = dchisq, args=list(df=6), colour=color2, size=lineSize, n=interpolationPoints) +
-  stat_function(fun = dchisq, args=list(df=7), colour=color1, size=lineSize, n=interpolationPoints) +
-  stat_function(fun = dchisq, args=list(df=8), colour=color1, size=lineSize, n=interpolationPoints) +
+  stat_function(fun = dchisq, args=list(df=1), colour=color2, linewidth=lineSize, n=interpolationPoints) +
+  stat_function(fun = dchisq, args=list(df=2), colour=color2, linewidth=lineSize, n=interpolationPoints) +
+  stat_function(fun = dchisq, args=list(df=3), colour=color1, linewidth=lineSize, n=interpolationPoints) +
+  stat_function(fun = dchisq, args=list(df=4), colour=color1, linewidth=lineSize, n=interpolationPoints) +
+  stat_function(fun = dchisq, args=list(df=5), colour=color2, linewidth=lineSize, n=interpolationPoints) +
+  stat_function(fun = dchisq, args=list(df=6), colour=color2, linewidth=lineSize, n=interpolationPoints) +
+  stat_function(fun = dchisq, args=list(df=7), colour=color1, linewidth=lineSize, n=interpolationPoints) +
+  stat_function(fun = dchisq, args=list(df=8), colour=color1, linewidth=lineSize, n=interpolationPoints) +
 
   scale_x_continuous(expand = c(0, 0)) +
   scale_y_continuous(expand = c(0, 0), limits=c(0, .6)) +
@@ -37,9 +37,10 @@ g <- ggplot(data.frame(x=seq(from=0, to=10, length=5)), aes(x)) +
   theme(axis.ticks=element_line(colour=color1)) +
   theme(plot.margin = unit(c(0,0,0,0), "cm"))
 
+ggsave(plot=g, filename="./Diagrams/BbmcLogos/bbmc-distributions-background-clear-short-2.png", width=.5, height=.05, dpi=100, bg=NA, scale=20)
 ggsave(plot=g, filename="./Diagrams/BbmcLogos/bbmc-distributions-background-clear-short.png", width=.5, height=.1, dpi=100, bg=NA, scale=20)
-ggsave(plot=g, filename="./Diagrams/BbmcLogos/BbmcDistributionsBackgroundClear.png", width=5.5, height=2.2, dpi=1200, bg=NA)
-ggsave(plot=g, filename="./Diagrams/BbmcLogos/BbmcDistributionsBackgroundWhite.png", width=5.5, height=2.2, dpi=1200, bg="white")
+ggsave(plot=g, filename="./Diagrams/BbmcLogos/bbmc-distributions-background-clear.png", width=5.5, height=2.2, dpi=1200, bg=NA)
+ggsave(plot=g, filename="./Diagrams/BbmcLogos/bbmc-distributions-background-white.png", width=5.5, height=2.2, dpi=1200, bg="white")
 # ggsave(filename="./Publications/Logos/BbmcDistributionsBackgroundClear.svg", width=5.5, height=2.2, dpi=400, bg=NA)
 
 # ggsave(filename="./Diagrams/BbmcLogos/BbmcDistributionsBackgroundSquareClear.png", width=2.2, height=2.2, dpi=400, bg=NA)
