@@ -12,7 +12,9 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 
     1. **Database Name**: describes the database for your specific project
 
-1. Download and install [the most recent ODBC driver](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server) for SQL Server, which is V17 as of October 2019.  Unless otherwise specified, choose the 64-bit driver version.  (FAQ: [determining](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq) if your OS is 32-bit vs 64-bit.)
+1. Download and install [the most recent ODBC driver](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server) for SQL Server, which is V18 as of April 2025.  
+   Unless otherwise specified, choose the 64-bit driver version.  
+   (FAQ: [determining](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq) if your OS is 32-bit vs 64-bit.)
 
     You may not have admin privileges on your computer.  If not, it's probably best to request IT to install the driver.
 
@@ -35,11 +37,16 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 
     ![create-data-source](images/create-data-source.png)
 
-1. Specify the **DSN Name** in the first box and the **Server Name** in the third box.  You can leave the second box blank, or write something to help you remember the context later.  Treat it as case sensitive, although it won't matter in some scenarios.  Click 'Next'.
+1. Specify the **DSN Name** in the first box and the **Server Name** in the third box.  
+  You can leave the second box blank, or write something to help you remember the context later.  
+  Treat it as case sensitive, although it won't matter in some scenarios.  Click 'Next'.
 
     ![specific-server](images/specific-server.png)
 
-1. The boxes in the next screen should remain as their defaults.  This will leverage your Window's username and password with contacting the database.  You shouldn't ever have to enter your password for the database (either in this screen, or each time you contact the database).  Click 'Next'.
+1. The boxes in the next screen should remain as their defaults.  
+  This will leverage your Window's username and password with contacting the database.  
+  You shouldn't ever have to enter your password for the database (either in this screen, or each time you contact the database).  
+  Click 'Next'.
 
     ![integrated-security](images/integrated-security.png)
 
@@ -47,7 +54,8 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 
     ![specific-database](images/specific-database.png)
 
-1. Keep the default values in the next screen.  Click 'Finish'.
+1. Change the value for "Connection Encryption" to "Optional". 
+  Click 'Finish'.
 
     ![finish-entry](images/finish-entry.png)
 
@@ -65,7 +73,8 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
 1. If the 'Test Data Source' fails, verify that
     * Your computer is connected to the campus network.  If you're off-campus, VPN access may not be adequate.
     * The **DSN Name**, **Server Name**, and **Database Name** are correct.
-    * A BBMC database administrator has correctly (a) created a *server* login and (b) created a *database* user account, and (c) granted  adequate privileges to the database user account.
+    * A BBMC database administrator has correctly (a) created a *server* login and (b) created a *database* user account, and (c) granted adequate privileges to the database user account.
+    * You've set the correct value for "Connection Encryption" on the last page of options.
 
 
 ### Add user privileges (for database admins)
@@ -103,4 +112,4 @@ EXEC (
 
 ```
 
-*last revised 2017-05-23 by Will Beasley*
+*last revised 2025-05-29 by Will Beasley*
