@@ -6,13 +6,13 @@ Public-facing resources and documents related to the [BBMC](http://ouhsc.edu/bbm
 Here is a table of contents of BBMC materials included in this repository, and others.
 
 ### For Researchers & Analysts
-1. [GitHub](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/github.md) account creation, repository initiation, and justification.
+1. [GitHub](https://github.com/OuhscBbmc/BbmcResources/blob/main/instructions/github.md) account creation, repository initiation, and justification.
 1. REDCap
-    * [Account creation template](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/redcap.md), especially for new CDW researchers.
-    * [Guidelines](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/redcap-creation-guidelines.md) for creating a high-quality REDCap project that is easy to maintain.
-    * [Training](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/tree/master/DocumentationGlobal/TrainingDocuments) documents.
-1. Gaining [fileserver privileges](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/username.md), especially for CDW researchers.
-1. Spinning up a [CDW investigation](https://github.com/OuhscBbmc/prairie-outpost-public/blob/master/documentation/services/spinup-investigation.md).
+    * [Account creation template](https://github.com/OuhscBbmc/BbmcResources/blob/main/instructions/redcap.md), especially for new CDW researchers.
+    * [Guidelines](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/main/DocumentationGlobal/redcap-creation-guidelines.md) for creating a high-quality REDCap project that is easy to maintain.
+    * [Training](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/tree/main/DocumentationGlobal/TrainingDocuments) documents.
+1. Gaining [fileserver privileges](https://github.com/OuhscBbmc/BbmcResources/blob/main/instructions/username.md), especially for CDW researchers.
+1. Spinning up a [CDW investigation](https://github.com/OuhscBbmc/prairie-outpost-public/blob/main/documentation/services/spinup-investigation.md).
 
 ### For Analysts
 1. [Installing](https://ouhscbbmc.github.io/data-science-practices-1/workstation.html) our data science ecosystem.
