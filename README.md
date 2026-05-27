@@ -16,26 +16,26 @@ Here is a table of contents of BBMC materials included in this repository, and o
 
 ### For Analysts
 1. [Installing](https://ouhscbbmc.github.io/data-science-practices-1/workstation.html) our data science ecosystem.
-1. [Maintaining](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/maintaining-r.md) our data science ecosystem.
-1. [ODBC](https://github.com/OuhscBbmc/BbmcResources/blob/master/instructions/odbc-dsn.md) configurations to communicate with a database.
-1. [Report checklist](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/ReportChecklist.md) for analysts.
-1. [Official resources](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/master/DocumentationGlobal/ResourcesOfficial.md) for our ecosystem recommendations.
+1. [Maintaining](https://github.com/OuhscBbmc/BbmcResources/blob/main/instructions/maintaining-r.md) our data science ecosystem.
+1. [ODBC](https://github.com/OuhscBbmc/BbmcResources/blob/main/instructions/odbc-dsn.md) configurations to communicate with a database.
+1. [Report checklist](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/main/DocumentationGlobal/ReportChecklist.md) for analysts.
+1. [Official resources](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/blob/main/DocumentationGlobal/ResourcesOfficial.md) for our ecosystem recommendations.
 1. REDCap
-    * [Patterns](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/tree/master/documentation_patterns) for interoperability.
+    * [Patterns](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/tree/main/documentation_patterns) for interoperability.
     * [Governance](https://github.com/OuhscBbmc/RedcapGovernanceDocs) documents.
-    * [Presentations](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/tree/master/Publications) by BBMC members.
+    * [Presentations](https://github.com/OuhscBbmc/RedcapExamplesAndPatterns/tree/main/Publications) by BBMC members.
 
 ### For BBMC Members
 (requires permissions)
-1. [Database support](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/services/database-services.md) tiers.
-1. [Starting a new analyst](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/setting-up-analyst/setting-up-analyst.md) within our department involves a lot of little independent tasks.
+1. [Database support](https://github.com/OuhscBbmc/bbmc-database-management/blob/main/services/database-services.md) tiers.
+1. [Starting a new analyst](https://github.com/OuhscBbmc/bbmc-database-management/blob/main/maintenance/setting-up-analyst/setting-up-analyst.md) within our department involves a lot of little independent tasks.
 
 ### For BBMC Server Admins
 (requires permissions)
-1. [CRDW Snippets](https://github.com/OuhscBbmc/prairie-outpost/tree/master/documentation/snippets) for code & correspondence
-1. [CDW Maintenance](https://github.com/OuhscBbmc/bbmc-database-management/tree/master/maintenance) documents.
-1. [Database backup](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/backup-plan/backup-plan.md) plans.
-1. [Rebuilding a VDI](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/maintenance/vdi-rebuild/vdi-rebuild.md) after its reset.
-1. [Installing RStudio and Shiny](https://github.com/OuhscBbmc/bbmc-database-management/tree/master/maintenance/install-shiny) in Ubuntu and Red Hat Linux.
-1. [Granting access to the REDCap token server](https://github.com/OuhscBbmc/bbmc-database-management/blob/master/code/redcap-admin/add-api-user-to-bbmc-security.sql).
-1. [REDCap](https://github.com/OuhscBbmc/bbmc-database-management/tree/master/maintenance/redcap) notes.
+1. [CRDW Snippets](https://github.com/OuhscBbmc/prairie-outpost/tree/main/documentation/snippets) for code & correspondence
+1. [CDW Maintenance](https://github.com/OuhscBbmc/bbmc-database-management/tree/main/maintenance) documents.
+1. [Database backup](https://github.com/OuhscBbmc/bbmc-database-management/blob/main/maintenance/backup-plan/backup-plan.md) plans.
+1. [Rebuilding a VDI](https://github.com/OuhscBbmc/bbmc-database-management/blob/main/maintenance/vdi-rebuild/vdi-rebuild.md) after its reset.
+1. [Installing RStudio and Shiny](https://github.com/OuhscBbmc/bbmc-database-management/tree/main/maintenance/install-shiny) in Ubuntu and Red Hat Linux.
+1. [Granting access to the REDCap token server](https://github.com/OuhscBbmc/bbmc-database-management/blob/main/code/redcap-admin/add-api-user-to-bbmc-security.sql).
+1. [REDCap](https://github.com/OuhscBbmc/bbmc-database-management/tree/main/documentation/redcap) notes.
