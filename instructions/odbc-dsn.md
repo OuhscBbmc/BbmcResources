@@ -29,6 +29,16 @@ Goal: Create a local [user ODBC DSN](https://technet.microsoft.com/en-us/library
         1. You will now be linked to the VMWare download website. Select the “Go to Downloads” link for your operating system.
         1. Next click the Download button for your download, you can either download locally and then click to launch the file, or select Run if prompted by your browser.
 
+1. For new computers, you likely have to [request a firewall exception](https://itsupport.ou.edu/TDClient/34/OKC/Requests/Service/38/Firewall-Request?SIDs=1221).
+   * Ask Will, Andrew,. or possibly Jason in Peds IS to submit the ticket
+   * Request type: "Is For Future Need"
+   * Action: "Create"
+   * Source IP Address: grab the IPv4 value from something like <https://whatismyipaddress.com/>
+   * Destination IP Address: run `ipconfig /all` on the database server
+   * Ports: {redacted}
+   * Description of the change: Write something that will help you understand the ticket in the future.
+     Something like "This allows {analyst name} to access the {database-server} server from their workstation"
+
 1. Open the ODBC panel.  Click the Window's start button in the bottom left corner, and type 'ODBC'.  
 
     ![open-odbc-panel](images/open-odbc-panel.png)
